@@ -1,0 +1,5 @@
+insert into razones values('No Aviso')
+insert into razones values('Cambio de Horario')
+insert into razones values('Aviso con Tiempo')
+insert into razones values('Venta Pasaje Fijo')
+insert into razones values('Venta Pasaje Manual')

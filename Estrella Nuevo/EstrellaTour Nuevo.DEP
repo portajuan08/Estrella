@@ -1,0 +1,29 @@
+[Version]
+Version=1.0.0.0
+
+[EstrellaTour Nuevo.exe <000A>]
+Dest=$(AppPath)
+Date=10/11/2015
+Time=21:04
+Version=1.0.0.0
+CABFilename=EstrellaTour Nuevo.CAB
+CABINFFile=EstrellaTour Nuevo.INF
+Uses1=msvbvm60.dll
+Uses2=OLEAUT32.DLL
+Uses3=OLEPRO32.DLL
+Uses4=ASYCFILT.DLL
+Uses5=STDOLE2.TLB
+Uses6=COMCAT.DLL
+Uses7=VB6ES.DLL
+Uses8=MSSTDFMT.DLL
+Uses9=MSDBRPTR.DLL
+Uses10=msado27.tlb
+Uses11=MSCOMCTL.OCX
+Uses12=MSCOMCT2.OCX
+Uses13=MSMASK32.OCX
+
+[msado27.tlb <000A>]
+Dest=$(WinSysPath)
+Date=06/06/2012
+Time=00:51
+Version=6.1.7601.17857
