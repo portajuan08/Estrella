@@ -1,11 +1,11 @@
 Attribute VB_Name = "Imprimir"
 Option Explicit
 Public aRecSet As New ADODB.Recordset
-Function Create_Recordset(RegistrosIzq() As Variant, bEOFizq, RegistrosDer() As Variant, bEOFder, Viaje_doble As Boolean) As ADODB.Recordset
+Function Create_Recordset(RegistrosIzq() As Variant, bEOFizq, RegistrosDer() As Variant, bEOFder, Viaje_doble As Boolean, cant_pasajes As Integer) As ADODB.Recordset
 Dim registrosAux As Recordset
 Dim iRow, iCol As Long
 
-Dim numero, descripcion, nombre, dni, precio, numeroB, descripcionB, nombreB, dniB, precioB As String
+Dim numero, descripcion, Nombre, dni, precio, numeroB, descripcionB, nombreB, dniB, precioB As String
 Set registrosAux = New Recordset
     
     registrosAux.Fields.Append "numero", adVarChar, 250
@@ -20,10 +20,10 @@ Set registrosAux = New Recordset
     registrosAux.Fields.Append "precioB", adVarChar, 250
     registrosAux.Open
     
-    For iRow = 0 To 18
+    For iRow = 0 To (cant_pasajes / 2 - 1)
         registrosAux.AddNew
         registrosAux.Fields(0) = iRow + 1
-        registrosAux.Fields(5) = IIf(Viaje_doble, iRow + 1, iRow + 20)
+        registrosAux.Fields(5) = IIf(Viaje_doble, iRow + 1, iRow + (cant_pasajes / 2 + 1))
         For iCol = 1 To 4
             If Not bEOFizq Then
                 If UBound(RegistrosIzq, 2) >= iRow Then registrosAux.Fields(iCol).Value = IIf(IsNull(RegistrosIzq(iCol - 1, iRow)), vbNullString, RegistrosIzq(iCol - 1, iRow))
@@ -37,17 +37,22 @@ Set registrosAux = New Recordset
     
 End Function
 
-Function Armar_Recordset(RegistrosIzq() As Variant, bEOFizq As Boolean) As ADODB.Recordset
+Function Armar_Recordset(RegistrosIzq() As Variant, bEOFizq As Boolean, cant_pasajes As Integer) As ADODB.Recordset
     Dim iRow, iCol, limiteSuperior As Integer
     Dim bEOFder As Boolean
-    Dim RegistrosDer(0 To 3, 0 To 18) As Variant
-
+    Dim RegistrosDer(0 To 3, 0 To 100) As Variant
+    Dim limitDer As Integer
+    If cant_pasajes > 48 Then
+        limitDer = 24
+    Else
+        limitDer = cant_pasajes / 2
+    End If
     If Not bEOFizq Then
-        For iRow = 0 To 37
+        For iRow = 0 To (cant_pasajes - 1)
             If UBound(RegistrosIzq, 2) >= iRow Then
-                If iRow >= 19 Then
+                If iRow >= (cant_pasajes / 2) Then
                     For iCol = 0 To 3
-                        RegistrosDer(iCol, iRow - 19) = IIf(IsNull(RegistrosIzq(iCol, iRow)), vbNullString, RegistrosIzq(iCol, iRow))
+                        RegistrosDer(iCol, iRow - (cant_pasajes / 2)) = IIf(IsNull(RegistrosIzq(iCol, iRow)), vbNullString, RegistrosIzq(iCol, iRow))
                     Next iCol
                 End If
             End If
@@ -56,14 +61,16 @@ Function Armar_Recordset(RegistrosIzq() As Variant, bEOFizq As Boolean) As ADODB
         bEOFder = True
     End If
     
-    Set Armar_Recordset = Create_Recordset(RegistrosIzq, bEOFizq, RegistrosDer, bEOFder, False)
+    Set Armar_Recordset = Create_Recordset(RegistrosIzq, bEOFizq, RegistrosDer, bEOFder, False, cant_pasajes)
 End Function
 
 
 Public Sub ImprimirPlanillaCharterIdaYVuelta(IdViajeMercedes As String _
                                            , Hora_mercedes As String _
+                                           , cant_pasajes_Mercedes As Integer _
                                            , IdViajeBsAs As String _
                                            , Hora_BsAs As String _
+                                           , cant_pasajes_BsAs As Integer _
                                            , dia As String _
                                            , CHOFER As String _
                                            , Interno As String)
@@ -76,11 +83,15 @@ Public Sub ImprimirPlanillaCharterIdaYVuelta(IdViajeMercedes As String _
     
     RegistrosMercedes = cargarPasajesImprimir(IdViajeMercedes)
     RegistrosBsAs = cargarPasajesImprimir(IdViajeBsAs)
-    
-   
+    Dim cant_pasajes As Integer
+    If cant_pasajes_Mercedes > cant_pasajes_BsAs Then
+        cant_pasajes = cant_pasajes_Mercedes
+    Else
+        cant_pasajes = cant_pasajes_BsAs
+    End If
     ' llamar la función Create_Recordset
     
-    Set registrosImprimir = Create_Recordset(RegistrosMercedes, obtenerEOF(IdViajeMercedes), RegistrosBsAs, obtenerEOF(IdViajeBsAs), True)
+    Set registrosImprimir = Create_Recordset(RegistrosMercedes, obtenerEOF(IdViajeMercedes), RegistrosBsAs, obtenerEOF(IdViajeBsAs), True, cant_pasajes * 2)
     If Not registrosImprimir Is Nothing Then
         
        'Indicar en esta variable el nombre de la sección en la que se encuentran los rptTextBox para cada campo
@@ -116,6 +127,7 @@ End Sub
 Public Sub ImprimirPlanillaCharterUnicoSentido(IdViaje As String _
                                     , Hora As String _
                                     , dia As String _
+                                    , cant_pasajes As Integer _
                                     , CHOFER As String _
                                     , Interno As String _
                                     , Tipo_Viaje As String)
@@ -125,7 +137,8 @@ Public Sub ImprimirPlanillaCharterUnicoSentido(IdViaje As String _
     Dim DETALLE, sSelectPasajes As String
     ' llamar la función Create_Recordset
     Registros = cargarPasajesImprimir(IdViaje)
-    Set registrosImprimir = Armar_Recordset(Registros, obtenerEOF(IdViaje))
+    If cant_pasajes <= 20 Then cant_pasajes = cant_pasajes * 2
+    Set registrosImprimir = Armar_Recordset(Registros, obtenerEOF(IdViaje), cant_pasajes)
     If Not registrosImprimir Is Nothing Then
         
        'Indicar en esta variable el nombre de la sección en la que se encuentran los rptTextBox para cada campo
@@ -157,21 +170,24 @@ End Sub
 
 Public Sub ImprimirPlanillaCharterIda(IdViajeMercedes As String _
                                     , Hora_mercedes As String _
+                                    , cant_pasajes As Integer _
                                     , dia As String _
                                     , CHOFER As String _
                                     , Interno As String)
-Call ImprimirPlanillaCharterUnicoSentido(IdViajeMercedes, Hora_mercedes, dia, CHOFER, Interno, "SALIDA")
+If cant_pasajes Mod 2 <> 0 Then cant_pasajes = cant_pasajes + 1
+Call ImprimirPlanillaCharterUnicoSentido(IdViajeMercedes, Hora_mercedes, dia, cant_pasajes, CHOFER, Interno, "SALIDA")
 Call agregarImpresion(IdViajeMercedes)
 End Sub
 
 
 Public Sub ImprimirPlanillaCharterVuelta(IdViajeBsAs As String _
                                        , Hora_BsAs As String _
+                                       , cant_pasajes As Integer _
                                        , dia As String _
                                        , CHOFER As String _
                                        , Interno As String)
-
-Call ImprimirPlanillaCharterUnicoSentido(IdViajeBsAs, Hora_BsAs, dia, CHOFER, Interno, "REGRESO")
+If cant_pasajes Mod 2 <> 0 Then cant_pasajes = cant_pasajes + 1
+Call ImprimirPlanillaCharterUnicoSentido(IdViajeBsAs, Hora_BsAs, dia, cant_pasajes, CHOFER, Interno, "REGRESO")
 Call agregarImpresion(IdViajeBsAs)
 End Sub
 

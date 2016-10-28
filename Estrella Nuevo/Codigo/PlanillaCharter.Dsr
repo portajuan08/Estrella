@@ -1,13 +1,13 @@
 VERSION 5.00
 Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} PlanillaCharter 
    Caption         =   "Planilla Charter"
-   ClientHeight    =   5340
+   ClientHeight    =   2865
    ClientLeft      =   60
    ClientTop       =   345
    ClientWidth     =   11280
    StartUpPosition =   3  'Windows Default
    _ExtentX        =   19897
-   _ExtentY        =   9419
+   _ExtentY        =   5054
    _Version        =   393216
    _DesignerVersion=   100688210
    ReportWidth     =   18720
@@ -23,7 +23,6 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} PlanillaCharter
    GridX           =   1
    GridY           =   1
    RightMargin     =   1440
-   BottomMargin    =   1440
    NumSections     =   3
    SectionCode0    =   2
    BeginProperty Section0 {1C13A8E0-A0B6-11D0-848E-00A0C90DC8A9} 
@@ -652,7 +651,6 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} PlanillaCharter
    BeginProperty Section2 {1C13A8E0-A0B6-11D0-848E-00A0C90DC8A9} 
       _Version        =   393216
       Name            =   "Sección3"
-      Object.Height          =   390
       NumControls     =   0
    EndProperty
 End

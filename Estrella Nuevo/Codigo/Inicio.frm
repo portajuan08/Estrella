@@ -5,9 +5,9 @@ Object = "{C932BA88-4374-101B-A56C-00AA003668DC}#1.1#0"; "MSMASK32.OCX"
 Object = "{F9043C88-F6F2-101A-A3C9-08002B2F49FB}#1.2#0"; "COMDLG32.OCX"
 Begin VB.Form Inicio 
    Caption         =   "Inicio"
-   ClientHeight    =   10740
+   ClientHeight    =   10650
    ClientLeft      =   60
-   ClientTop       =   1785
+   ClientTop       =   1695
    ClientWidth     =   15240
    BeginProperty Font 
       Name            =   "MS Sans Serif"
@@ -20,7 +20,7 @@ Begin VB.Form Inicio
    EndProperty
    KeyPreview      =   -1  'True
    LinkTopic       =   "Form1"
-   ScaleHeight     =   10740
+   ScaleHeight     =   10650
    ScaleWidth      =   15240
    WindowState     =   2  'Maximized
    Begin VB.Timer Timer1 
@@ -299,7 +299,7 @@ Begin VB.Form Inicio
                Strikethrough   =   0   'False
             EndProperty
             CustomFormat    =   "HH:mm"
-            Format          =   81199107
+            Format          =   94044163
             UpDown          =   -1  'True
             CurrentDate     =   42273
          End
@@ -612,7 +612,7 @@ Begin VB.Form Inicio
                Strikethrough   =   0   'False
             EndProperty
             CustomFormat    =   "HH:mm"
-            Format          =   81199107
+            Format          =   94044163
             UpDown          =   -1  'True
             CurrentDate     =   42273
          End
@@ -1439,7 +1439,7 @@ Begin VB.Form Inicio
                Strikethrough   =   0   'False
             EndProperty
             ShowToday       =   0   'False
-            StartOfWeek     =   81199106
+            StartOfWeek     =   94044162
             TitleBackColor  =   -2147483646
             TitleForeColor  =   -2147483639
             TrailingForeColor=   -2147483632
@@ -3334,7 +3334,7 @@ Begin VB.Form Inicio
             Strikethrough   =   0   'False
          EndProperty
          ShowToday       =   0   'False
-         StartOfWeek     =   81199106
+         StartOfWeek     =   94044162
          TitleBackColor  =   -2147483646
          TitleForeColor  =   -2147483639
          TrailingForeColor=   -2147483632
@@ -3416,7 +3416,7 @@ Begin VB.Form Inicio
             Strikethrough   =   0   'False
          EndProperty
          CustomFormat    =   "HH:mm"
-         Format          =   81199107
+         Format          =   94044163
          UpDown          =   -1  'True
          CurrentDate     =   42273
       End
@@ -4415,20 +4415,25 @@ Private Sub Command32_Click()
 Dim checkMercedes, checkBsAs As Integer
 checkMercedes = obtenerIndexCheck(ListViajesSalida)
 checkBsAs = obtenerIndexCheck(ListViajesRegreso)
+
 If checkMercedes > 0 And checkBsAs > 0 Then Call ImprimirPlanillaCharterIdaYVuelta(ListViajesSalida.ListItems(checkMercedes).Tag _
                                                                                  , ListViajesSalida.ListItems(checkMercedes).Text _
+                                                                                 , ListViajesSalida.ListItems(checkMercedes).ListSubItems(2).Text _
                                                                                  , ListViajesRegreso.ListItems(checkBsAs).Tag _
                                                                                  , ListViajesRegreso.ListItems(checkBsAs).Text _
+                                                                                 , ListViajesRegreso.ListItems(checkBsAs).ListSubItems(2).Text _
                                                                                  , MonthView1.Value _
                                                                                  , Combo9.Text _
                                                                                  , Text26.Text): Exit Sub
 If checkMercedes > 0 Then Call ImprimirPlanillaCharterIda(ListViajesSalida.ListItems(checkMercedes).Tag _
                                                         , ListViajesSalida.ListItems(checkMercedes).Text _
+                                                        , ListViajesSalida.ListItems(checkMercedes).ListSubItems(2).Text _
                                                         , MonthView1.Value _
                                                         , Combo9.Text _
                                                         , Text26.Text)
 If checkBsAs > 0 Then Call ImprimirPlanillaCharterVuelta(ListViajesRegreso.ListItems(checkBsAs).Tag _
                                                          , ListViajesRegreso.ListItems(checkBsAs).Text _
+                                                         , ListViajesRegreso.ListItems(checkBsAs).ListSubItems(2).Text _
                                                          , MonthView1.Value _
                                                          , Combo9.Text _
                                                          , Text26.Text)
