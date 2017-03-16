@@ -3,15 +3,16 @@ Option Explicit
 
 Public Declare Function GetPrivateProfileString Lib "kernel32" Alias "GetPrivateProfileStringA" (ByVal lpApplicationname As String, ByVal lpKeyname As Any, ByVal lpdefault As String, ByVal lpreturnedstring As String, ByVal nsize As Long, ByVal lpfilename As String) As Long
 Public Declare Function writeprivateprofilestring Lib "kernel32" Alias "WritePrivateProfileStringA" (ByVal lpApplicationname As String, ByVal lpKeyname As Any, ByVal lpString As String, ByVal lpfilename As String) As Long
+Private Declare Function SendMessage Lib "user32" Alias "SendMessageA" ( _
+    ByVal hwnd As Long, _
+    ByVal wMsg As Long, _
+    ByVal wParam As Long, _
+    lParam As Any) As Long
 
 Sub Main()
 Inicio.Show
 Inicio.lblEstado = "Conectado a la Base de datos."
 Call conectarBaseDatos
-Inicio.lblEstado = "Cargando clientes."
-Call cargarNombresCliente
-Inicio.lblEstado = "Finalizado correctamente."
-'Inicio.Timer1.Enabled = True
 End Sub
 
 
@@ -21,7 +22,6 @@ With Inicio
     .COMBI.Visible = False
     .PARADA_MERCEDES.Visible = False
     .PARADA_BSAS.Visible = False
-    .GRUPO.Visible = False
     .VIAJES_FIJOS_MERCEDES.Visible = False
     .VIAJES_FIJOS_BSAS.Visible = False
     .AGENDA.Visible = False
@@ -46,7 +46,17 @@ FrameX.Visible = True
 FrameX.Enabled = True
 End Sub
 
-
+Sub OcultarFramesRegreso(FrameX As Frame)
+With FormularioRegreso
+    .VENTA_PASAJES.Visible = False
+    .VENDER_PASAJE.Visible = False
+    .PASAR_OCUPADO.Visible = False
+    .EL_PASAJE.Visible = False
+    .ED_PASAJE.Visible = False
+End With
+FrameX.Visible = True
+FrameX.Enabled = True
+End Sub
 
 Function obtenerNombreDia(dia As String) As String
 If dia = 1 Then
@@ -105,7 +115,7 @@ Next i
 End Function
 
 Public Sub ListView_ColorearLinea(LaLista As ListView, Linea As Long, Color As Long)
-Dim x As Integer
+Dim X As Integer
 
 'Verifico si la linea que quiere modificar existe
 If Linea > LaLista.ListItems.Count Then
@@ -116,14 +126,33 @@ End If
 LaLista.ListItems(Linea).ForeColor = Color
 
 'modifico el color de las demas columnas
-For x = 1 To LaLista.ColumnHeaders.Count - 1
+For X = 1 To LaLista.ColumnHeaders.Count - 1
     'verifico que el subitem tenga algo escrito, por que si no tiene nada tira
     'error de "subindice fuera de intervalo"
-    If Trim(LaLista.SelectedItem.SubItems(x) <> "") Then
-        LaLista.ListItems(Linea).ListSubItems(x).ForeColor = Color
+    If Trim(LaLista.SelectedItem.SubItems(X) <> "") Then
+        LaLista.ListItems(Linea).ListSubItems(X).ForeColor = Color
     End If
-Next x
+Next X
 
 'actualizo el list para que se vean los cambios
 LaLista.Refresh
+End Sub
+
+Public Sub AutoCompletar(ComboX As ComboBox, KeyCode As Integer, Shift As Integer)
+Dim LenText As Long, ret As Long
+     
+   'Si los caracteres presionados están entre el 0 y la Z
+   If KeyCode >= vbKey0 And KeyCode <= vbKeyNumpad9 Then
+     
+   ret = SendMessage(ComboX.hwnd, &H14C&, -1, ByVal ComboX.Text)
+     
+         If ret >= 0 Then
+            LenText = Len(ComboX.Text)
+            ComboX.ListIndex = ret
+            ComboX.Text = ComboX.List(ret)
+            ComboX.SelStart = LenText
+            ComboX.SelLength = Len(ComboX.Text) - LenText
+              
+         End If
+   End If
 End Sub

@@ -29,12 +29,17 @@ Public Sub cargarPasajesViajes(ListViewTitular As ListView, ListViewSuplentes As
                 numeroTit = numeroTit + 1
                 
                 Set Item = ListViewTitular.ListItems.Add(, , numeroTit)
-                Item.SubItems(1) = IIf(IsNull(Registros(2, i)), vbNullString, Registros(2, i))
-                Item.SubItems(2) = IIf(IsNull(Registros(3, i)), vbNullString, Registros(3, i))
-                Item.SubItems(3) = IIf(IsNull(Registros(4, i)), vbNullString, Registros(4, i))
-                Item.SubItems(5) = IIf(IsNull(Registros(5, i)), vbNullString, Registros(5, i))
-                Item.SubItems(4) = IIf(IsNull(Registros(7, i)), vbNullString, Registros(7, i))
-                Item.SubItems(6) = IIf(IsNull(Registros(0, i)), vbNullString, Registros(0, i))
+                Item.SubItems(1) = IIf(IsNull(Registros(12, i)), "N", IIf(Registros(12, i), "S", "N"))
+                Item.SubItems(2) = IIf(IsNull(Registros(2, i)), vbNullString, Registros(2, i))
+                Item.SubItems(3) = IIf(IsNull(Registros(3, i)), vbNullString, Registros(3, i))
+                Item.SubItems(4) = IIf(IsNull(Registros(4, i)), vbNullString, Registros(4, i))
+                Item.SubItems(5) = IIf(IsNull(Registros(7, i)), vbNullString, Registros(7, i))
+                Item.SubItems(6) = IIf(IsNull(Registros(5, i)), vbNullString, Registros(5, i))
+                Item.SubItems(7) = IIf(IsNull(Registros(0, i)), vbNullString, Registros(0, i))
+                Item.SubItems(8) = IIf(IsNull(Registros(9, i)), vbNullString, Registros(9, i))
+                Item.SubItems(9) = IIf(IsNull(Registros(10, i)), vbNullString, Registros(10, i))
+                Item.SubItems(10) = IIf(IsNull(Registros(11, i)), "NO", IIf(Registros(11, i), "SI", "NO"))
+                Item.SubItems(11) = IIf(IsNull(Registros(13, i)), vbNullString, Registros(13, i))
                 Call ListView_ColorearLinea(ListViewTitular, numeroTit, IIf(IsNull(Registros(8, i)), 0, Registros(8, i)))
             Else
                 numeroSup = numeroSup + 1
@@ -143,7 +148,7 @@ cmdCommand.Execute
 horaPasajeCompradoAux = cmdCommand("hora")
 End Function
 
-Public Sub eliminarPasaje(idPasaje As String, nombre_cliente As String, id_viaje As String, id_razon As Integer, observaciones As String)
+Public Sub eliminarPasaje(idPasaje As String, nombre_cliente As String, id_viaje As String, id_razon As Integer, observaciones As String, EL_PASAJE As Frame, VENDER_PASAJE As Frame)
 If idPasaje = vbNullString Or idPasaje = "" Or idPasaje = " " Then Exit Sub
 Dim cmdCommand As New ADODB.Command
 Dim resultado As Integer
@@ -162,8 +167,8 @@ Dim resultado As Integer
     
     If (resultado = 1) Then
         MsgBox "Pasaje Eliminado Correctamente."
-        Inicio.EL_PASAJE.Visible = False
-        Inicio.VENDER_PASAJE.Enabled = True
+        EL_PASAJE.Visible = False
+        VENDER_PASAJE.Enabled = True
     Else
         MsgBox "Ocurrio un error al eliminar el pasaje."
     End If
@@ -175,10 +180,10 @@ If idPasaje = vbNullString Or idPasaje = "" Or idPasaje = " " Then Exit Sub
 ConexionBD.Execute "update pasajes set en_espera = 1, id_parada = null where id = " & idPasaje
 End Sub
 
-Public Function ponerEnOcupado(idPasaje As String, descripcion_parada As String) As Boolean
+Public Function ponerEnOcupado(idPasaje As String, descripcion_parada As String, Ciudad As String) As Boolean
 If idPasaje = vbNullString Or idPasaje = "" Or idPasaje = " " Then Exit Function
 Dim idParada As Integer
-idParada = obtenerIdParada(descripcion_parada, Inicio.lblciudad.Caption)
+idParada = obtenerIdParada(descripcion_parada, Val(Ciudad))
 If idParada > 0 Then
     Dim cmdCommand As New ADODB.Command
     Dim resultado As Integer
@@ -204,20 +209,52 @@ End Function
 Public Function pintarEncabezadoPasaje(Color As Long)
 With Inicio
     .Frame2.ForeColor = Color
-    .Label39.ForeColor = Color
-    .Label40.ForeColor = Color
+    .lblInformacion(77).ForeColor = Color
     .lblId.ForeColor = Color
     .lblCapacidad.ForeColor = Color
-    .lblDia.ForeColor = Color
-    .lblHora.ForeColor = Color
+    .lblDiaAux.ForeColor = Color
+    .lblHoraAux.ForeColor = Color
     .lblDestino.ForeColor = Color
     .VENDER_PASAJE.ForeColor = Color
 End With
 End Function
 
 
-Public Sub editarPasaje(idPasaje As String, idParada As Integer, precio As String)
-ConexionBD.Execute "update pasajes set precio = " & precio & " ,id_parada = " & idParada & " where id = " & idPasaje
+Public Function pintarEncabezadoPasajeFormularioRegreso(Color As Long)
+With FormularioRegreso
+    .Frame2.ForeColor = Color
+    .lblInformacion(77).ForeColor = Color
+    .lblId.ForeColor = Color
+    .lblCapacidad.ForeColor = Color
+    .lblDiaAux.ForeColor = Color
+    .lblHoraAux.ForeColor = Color
+    .lblDestino.ForeColor = Color
+    .VENDER_PASAJE.ForeColor = Color
+End With
+End Function
+
+Public Sub editarPasaje(idPasaje As String, idParada As Integer, precio As String, reserva_pasaje As Boolean, factura As Boolean, observaciones As String)
+
+Dim cmdCommand As New ADODB.Command
+Dim resultado As Integer
+cmdCommand.ActiveConnection = ConexionBD
+cmdCommand.CommandType = adCmdStoredProc
+cmdCommand.CommandText = "editarPasaje"
+cmdCommand.Parameters.Append cmdCommand.CreateParameter("id_pasaje", adBigInt, adParamInput, , idPasaje)
+cmdCommand.Parameters.Append cmdCommand.CreateParameter("precio", adDouble, adParamInput, , precio)
+cmdCommand.Parameters.Append cmdCommand.CreateParameter("id_parada", adInteger, adParamInput, , idParada)
+cmdCommand.Parameters.Append cmdCommand.CreateParameter("reserva_pasaje", adBoolean, adParamInput, , reserva_pasaje)
+cmdCommand.Parameters.Append cmdCommand.CreateParameter("factura", adBoolean, adParamInput, , factura)
+cmdCommand.Parameters.Append cmdCommand.CreateParameter("observaciones", adVarChar, adParamInput, 1000, observaciones)
+cmdCommand.Parameters.Append cmdCommand.CreateParameter("id_usuario", adInteger, adParamInput, , IdUsuario_Sistema)
+cmdCommand.Parameters.Append cmdCommand.CreateParameter("resultado", adInteger, adParamOutput)
+cmdCommand.Execute
+resultado = cmdCommand("resultado")
+
+If (resultado <> 1) Then
+    MsgBox "Error al editar pasaje"
+End If
+Set cmdCommand.ActiveConnection = Nothing
 End Sub
 
 

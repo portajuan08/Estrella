@@ -5,7 +5,7 @@ Function Create_Recordset(RegistrosIzq() As Variant, bEOFizq, RegistrosDer() As 
 Dim registrosAux As Recordset
 Dim iRow, iCol As Long
 
-Dim numero, descripcion, Nombre, dni, precio, numeroB, descripcionB, nombreB, dniB, precioB As String
+
 Set registrosAux = New Recordset
     
     registrosAux.Fields.Append "numero", adVarChar, 250
@@ -13,23 +13,25 @@ Set registrosAux = New Recordset
     registrosAux.Fields.Append "nombre", adVarChar, 250
     registrosAux.Fields.Append "dni", adVarChar, 250
     registrosAux.Fields.Append "precio", adVarChar, 250
+    registrosAux.Fields.Append "asiento", adVarChar, 250
     registrosAux.Fields.Append "numeroB", adVarChar, 250
     registrosAux.Fields.Append "descripcionB", adVarChar, 250
     registrosAux.Fields.Append "nombreB", adVarChar, 250
     registrosAux.Fields.Append "dniB", adVarChar, 250
     registrosAux.Fields.Append "precioB", adVarChar, 250
+    registrosAux.Fields.Append "asientoB", adVarChar, 250
     registrosAux.Open
     
     For iRow = 0 To (cant_pasajes / 2 - 1)
         registrosAux.AddNew
         registrosAux.Fields(0) = iRow + 1
-        registrosAux.Fields(5) = IIf(Viaje_doble, iRow + 1, iRow + (cant_pasajes / 2 + 1))
-        For iCol = 1 To 4
+        registrosAux.Fields(6) = IIf(Viaje_doble, iRow + 1, iRow + (cant_pasajes / 2 + 1))
+        For iCol = 1 To 5
             If Not bEOFizq Then
                 If UBound(RegistrosIzq, 2) >= iRow Then registrosAux.Fields(iCol).Value = IIf(IsNull(RegistrosIzq(iCol - 1, iRow)), vbNullString, RegistrosIzq(iCol - 1, iRow))
             End If
             If Not bEOFder Then
-                If UBound(RegistrosDer, 2) >= iRow Then registrosAux.Fields(iCol + 5).Value = IIf(IsNull(RegistrosDer(iCol - 1, iRow)), vbNullString, RegistrosDer(iCol - 1, iRow))
+                If UBound(RegistrosDer, 2) >= iRow Then registrosAux.Fields(iCol + 6).Value = IIf(IsNull(RegistrosDer(iCol - 1, iRow)), vbNullString, RegistrosDer(iCol - 1, iRow))
             End If
         Next iCol
     Next iRow
@@ -40,7 +42,7 @@ End Function
 Function Armar_Recordset(RegistrosIzq() As Variant, bEOFizq As Boolean, cant_pasajes As Integer) As ADODB.Recordset
     Dim iRow, iCol, limiteSuperior As Integer
     Dim bEOFder As Boolean
-    Dim RegistrosDer(0 To 3, 0 To 100) As Variant
+    Dim RegistrosDer(0 To 4, 0 To 100) As Variant
     Dim limitDer As Integer
     If cant_pasajes > 48 Then
         limitDer = 24
@@ -51,7 +53,7 @@ Function Armar_Recordset(RegistrosIzq() As Variant, bEOFizq As Boolean, cant_pas
         For iRow = 0 To (cant_pasajes - 1)
             If UBound(RegistrosIzq, 2) >= iRow Then
                 If iRow >= (cant_pasajes / 2) Then
-                    For iCol = 0 To 3
+                    For iCol = 0 To 4
                         RegistrosDer(iCol, iRow - (cant_pasajes / 2)) = IIf(IsNull(RegistrosIzq(iCol, iRow)), vbNullString, RegistrosIzq(iCol, iRow))
                     Next iCol
                 End If

@@ -1,5 +1,5 @@
 [Root]
-Most Recent Package=Paquete de instalación estándar 3
+Most Recent Package=Paquete de instalación estándar 5
 
 
 [Package|Archivo .dep 1|Root]
@@ -671,5 +671,602 @@ ServerSideCab=
 File1=C:\Users\Juan\Desktop\Estrella Nuevo - Reenderizada\Estrella Nuevo\Paquete\setup.exe
 File2=C:\Users\Juan\Desktop\Estrella Nuevo - Reenderizada\Estrella Nuevo\Paquete\Setup.Lst
 File3=C:\Users\Juan\Desktop\Estrella Nuevo - Reenderizada\Estrella Nuevo\Paquete\EstrellaTour Nuevo.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|ArchivoEstrella1 .dep 4|Root]
+SubWizProgID=PDWizard.DepPkgSubWiz
+BuildFolder=C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo
+
+[Package|ArchivoEstrella1 .dep 4|Configure DAO ISAMs]
+Applicable=No
+
+[Package|ArchivoEstrella1 .dep 4|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|ArchivoEstrella1 .dep 4|Files Found]
+
+[Package|ArchivoEstrella1 .dep 4|Files Released]
+
+[Package|ArchivoEstrella1 .dep 4|Missing Dependency Information]
+C:\Program Files\Common Files\System\ado\msado27.tlb=
+
+[Package|ArchivoEstrella1 .dep 4|Out-of-Date Dependency Information]
+
+[Package|ArchivoEstrella1 .dep 4|Files Added]
+
+[Package|ArchivoEstrella1 .dep 4|Files Removed]
+
+[Package|ArchivoEstrella1 .dep 4|Files In Project]
+C:\Windows\system32\msvbvm60.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Windows\system32\VB6ES.DLL=Yes
+C:\Windows\system32\MSSTDFMT.DLL=Yes
+C:\Windows\system32\STDFTES.DLL=Yes
+C:\Windows\system32\MSDBRPTR.DLL=Yes
+C:\Windows\system32\DBRPRES.DLL=Yes
+C:\Program Files\Common Files\System\ado\msado27.tlb=Yes
+C:\Windows\system32\MSCOMCTL.OCX=Yes
+C:\Windows\system32\MSCMCES.DLL=Yes
+C:\Windows\system32\MSCOMCT2.OCX=Yes
+C:\Windows\system32\MSCC2ES.DLL=Yes
+C:\Windows\system32\MSMASK32.OCX=Yes
+C:\Windows\system32\MSMSKES.DLL=Yes
+C:\Windows\system32\COMDLG32.OCX=Yes
+C:\Windows\system32\CMDLGES.DLL=Yes
+C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo\EstrellaTour Nuevo.exe=Yes
+
+[Package|ArchivoEstrella1 .dep 4|Configure Registry Files]
+Applicable=No
+
+[Package|ArchivoEstrella1 .dep 4|Configure Remote Servers]
+Applicable=No
+
+[Package|ArchivoEstrella1 .dep 4|Install Locations]
+C:\Users\Juan\Desktop\Estrella Nuevo\Estrella Nuevo\EstrellaTour Nuevo.exe=$(AppPath)
+C:\Windows\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Windows\system32\VB6ES.DLL=$(WinSysPath)
+C:\Windows\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\Windows\system32\STDFTES.DLL=$(WinSysPath)
+C:\Windows\system32\MSDBRPTR.DLL=$(WinSysPath)
+C:\Windows\system32\DBRPRES.DLL=$(WinSysPath)
+C:\Program Files\Common Files\System\ado\msado27.tlb=$(WinSysPath)
+C:\Windows\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\Windows\system32\MSCMCES.DLL=$(WinSysPath)
+C:\Windows\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\Windows\system32\MSCC2ES.DLL=$(WinSysPath)
+C:\Windows\system32\MSMASK32.OCX=$(WinSysPath)
+C:\Windows\system32\MSMSKES.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Users\Juan\Desktop\Estrella Nuevo - Reenderizada\Estrella Nuevo\EstrellaTour Nuevo.exe=$(AppPath)
+C:\Windows\system32\COMDLG32.OCX=$(WinSysPath)
+C:\Windows\system32\CMDLGES.DLL=$(WinSysPath)
+C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo\EstrellaTour Nuevo.exe=$(AppPath)
+
+[Package|ArchivoEstrella1 .dep 4|Configure Shared Files]
+Applicable=Yes
+C:\Users\Juan\Desktop\Estrella Nuevo\Estrella Nuevo\EstrellaTour Nuevo.exe=Yes
+C:\Users\Juan\Desktop\Estrella Nuevo - Reenderizada\Estrella Nuevo\EstrellaTour Nuevo.exe=Yes
+
+[Package|ArchivoEstrella1 .dep 4|DepFile]
+DepCabFile=EstrellaTour Nuevo111.CAB
+DepCabRun=EstrellaTour Nuevo.INF
+
+[Package|ArchivoEstrella1 .dep 4|Distribution]
+Type=single
+Size=
+Title=EstrellaTour
+
+[Package|ArchivoEstrella1 .dep 4|IconGroups]
+Group0=EstrellaTour
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|ArchivoEstrella1 .dep 4|EstrellaTour]
+Icon1="EstrellaTour Nuevo.exe"
+Title1=EstrellaTour
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|ArchivoEstrella1 .dep 4|Package]
+PackageFolder=C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo
+ProjectFolder=C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo
+ServerSideCab=
+File1=C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo\EstrellaTour Nuevo.DEP
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Paquete de instalación estándar 4 juan prueba|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo
+
+[Package|Paquete de instalación estándar 4 juan prueba|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Paquete de instalación estándar 4 juan prueba|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Paquete de instalación estándar 4 juan prueba|Files Found]
+
+[Package|Paquete de instalación estándar 4 juan prueba|Files Released]
+
+[Package|Paquete de instalación estándar 4 juan prueba|Missing Dependency Information]
+C:\Program Files\Common Files\System\ado\msado27.tlb=
+
+[Package|Paquete de instalación estándar 4 juan prueba|Out-of-Date Dependency Information]
+
+[Package|Paquete de instalación estándar 4 juan prueba|Files Added]
+
+[Package|Paquete de instalación estándar 4 juan prueba|Files Removed]
+
+[Package|Paquete de instalación estándar 4 juan prueba|Files In Project]
+C:\Windows\system32\msvbvm60.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Windows\system32\VB6ES.DLL=Yes
+C:\Windows\system32\MSSTDFMT.DLL=Yes
+C:\Windows\system32\STDFTES.DLL=Yes
+C:\Windows\system32\MSDBRPTR.DLL=Yes
+C:\Windows\system32\DBRPRES.DLL=Yes
+C:\Program Files\Common Files\System\ado\msado27.tlb=Yes
+C:\Windows\system32\MSCOMCTL.OCX=Yes
+C:\Windows\system32\MSCMCES.DLL=Yes
+C:\Windows\system32\MSCOMCT2.OCX=Yes
+C:\Windows\system32\MSCC2ES.DLL=Yes
+C:\Windows\system32\MSMASK32.OCX=Yes
+C:\Windows\system32\MSMSKES.DLL=Yes
+C:\Windows\system32\COMDLG32.OCX=Yes
+C:\Windows\system32\CMDLGES.DLL=Yes
+C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo\EstrellaTour Nuevo.exe=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Windows\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Paquete de instalación estándar 4 juan prueba|Configure Registry Files]
+Applicable=No
+
+[Package|Paquete de instalación estándar 4 juan prueba|Configure Remote Servers]
+Applicable=No
+
+[Package|Paquete de instalación estándar 4 juan prueba|Install Locations]
+C:\Users\Juan\Desktop\Estrella Nuevo\Estrella Nuevo\EstrellaTour Nuevo.exe=$(AppPath)
+C:\Windows\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Windows\system32\VB6ES.DLL=$(WinSysPath)
+C:\Windows\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\Windows\system32\STDFTES.DLL=$(WinSysPath)
+C:\Windows\system32\MSDBRPTR.DLL=$(WinSysPath)
+C:\Windows\system32\DBRPRES.DLL=$(WinSysPath)
+C:\Program Files\Common Files\System\ado\msado27.tlb=$(WinSysPath)
+C:\Windows\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\Windows\system32\MSCMCES.DLL=$(WinSysPath)
+C:\Windows\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\Windows\system32\MSCC2ES.DLL=$(WinSysPath)
+C:\Windows\system32\MSMASK32.OCX=$(WinSysPath)
+C:\Windows\system32\MSMSKES.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Users\Juan\Desktop\Estrella Nuevo - Reenderizada\Estrella Nuevo\EstrellaTour Nuevo.exe=$(AppPath)
+C:\Windows\system32\COMDLG32.OCX=$(WinSysPath)
+C:\Windows\system32\CMDLGES.DLL=$(WinSysPath)
+C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo\EstrellaTour Nuevo.exe=$(AppPath)
+
+[Package|Paquete de instalación estándar 4 juan prueba|Configure Shared Files]
+Applicable=Yes
+C:\Users\Juan\Desktop\Estrella Nuevo\Estrella Nuevo\EstrellaTour Nuevo.exe=Yes
+C:\Users\Juan\Desktop\Estrella Nuevo - Reenderizada\Estrella Nuevo\EstrellaTour Nuevo.exe=Yes
+C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo\EstrellaTour Nuevo.exe=Yes
+
+[Package|Paquete de instalación estándar 4 juan prueba|DepFile]
+DepCabFile=EstrellaTour Nuevo111.CAB
+DepCabRun=EstrellaTour Nuevo.INF
+
+[Package|Paquete de instalación estándar 4 juan prueba|Distribution]
+Type=single
+Size=
+Title=EstrellaTour Prueba Juan
+
+[Package|Paquete de instalación estándar 4 juan prueba|IconGroups]
+Group0=EstrellaTour
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Paquete de instalación estándar 4 juan prueba|EstrellaTour]
+Icon1="EstrellaTour Nuevo.exe"
+Title1=EstrellaTour
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Paquete de instalación estándar 4 juan prueba|Package]
+PackageFolder=C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo
+ProjectFolder=C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo
+ServerSideCab=
+File1=C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo\setup.exe
+File2=C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo\Setup.Lst
+File3=C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo\EstrellaTour Nuevo.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Paquete de instalación Estrella Tour|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Users\Juan\Desktop\Instalador
+
+[Package|Paquete de instalación Estrella Tour|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Paquete de instalación Estrella Tour|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Paquete de instalación Estrella Tour|Files Found]
+
+[Package|Paquete de instalación Estrella Tour|Files Released]
+
+[Package|Paquete de instalación Estrella Tour|Missing Dependency Information]
+C:\Program Files\Common Files\System\ado\msado27.tlb=
+
+[Package|Paquete de instalación Estrella Tour|Out-of-Date Dependency Information]
+
+[Package|Paquete de instalación Estrella Tour|Files Added]
+
+[Package|Paquete de instalación Estrella Tour|Files Removed]
+
+[Package|Paquete de instalación Estrella Tour|Files In Project]
+C:\Windows\system32\msvbvm60.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Windows\system32\VB6ES.DLL=Yes
+C:\Windows\system32\MSSTDFMT.DLL=Yes
+C:\Windows\system32\STDFTES.DLL=Yes
+C:\Windows\system32\MSDBRPTR.DLL=Yes
+C:\Windows\system32\DBRPRES.DLL=Yes
+C:\Program Files\Common Files\System\ado\msado27.tlb=Yes
+C:\Windows\system32\MSCOMCTL.OCX=Yes
+C:\Windows\system32\MSCMCES.DLL=Yes
+C:\Windows\system32\MSCOMCT2.OCX=Yes
+C:\Windows\system32\MSCC2ES.DLL=Yes
+C:\Windows\system32\MSMASK32.OCX=Yes
+C:\Windows\system32\MSMSKES.DLL=Yes
+C:\Windows\system32\COMDLG32.OCX=Yes
+C:\Windows\system32\CMDLGES.DLL=Yes
+C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo\EstrellaTour Nuevo.exe=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Windows\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Paquete de instalación Estrella Tour|Configure Registry Files]
+Applicable=No
+
+[Package|Paquete de instalación Estrella Tour|Configure Remote Servers]
+Applicable=No
+
+[Package|Paquete de instalación Estrella Tour|Install Locations]
+C:\Users\Juan\Desktop\Estrella Nuevo\Estrella Nuevo\EstrellaTour Nuevo.exe=$(AppPath)
+C:\Windows\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Windows\system32\VB6ES.DLL=$(WinSysPath)
+C:\Windows\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\Windows\system32\STDFTES.DLL=$(WinSysPath)
+C:\Windows\system32\MSDBRPTR.DLL=$(WinSysPath)
+C:\Windows\system32\DBRPRES.DLL=$(WinSysPath)
+C:\Program Files\Common Files\System\ado\msado27.tlb=$(WinSysPath)
+C:\Windows\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\Windows\system32\MSCMCES.DLL=$(WinSysPath)
+C:\Windows\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\Windows\system32\MSCC2ES.DLL=$(WinSysPath)
+C:\Windows\system32\MSMASK32.OCX=$(WinSysPath)
+C:\Windows\system32\MSMSKES.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Users\Juan\Desktop\Estrella Nuevo - Reenderizada\Estrella Nuevo\EstrellaTour Nuevo.exe=$(AppPath)
+C:\Windows\system32\COMDLG32.OCX=$(WinSysPath)
+C:\Windows\system32\CMDLGES.DLL=$(WinSysPath)
+C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo\EstrellaTour Nuevo.exe=$(AppPath)
+
+[Package|Paquete de instalación Estrella Tour|Configure Shared Files]
+Applicable=Yes
+C:\Users\Juan\Desktop\Estrella Nuevo\Estrella Nuevo\EstrellaTour Nuevo.exe=Yes
+C:\Users\Juan\Desktop\Estrella Nuevo - Reenderizada\Estrella Nuevo\EstrellaTour Nuevo.exe=Yes
+C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo\EstrellaTour Nuevo.exe=Yes
+
+[Package|Paquete de instalación Estrella Tour|DepFile]
+DepCabFile=EstrellaTour Nuevo111.CAB
+DepCabRun=EstrellaTour Nuevo.INF
+
+[Package|Paquete de instalación Estrella Tour|Distribution]
+Type=single
+Size=
+Title=EstrellaTour Instalador
+
+[Package|Paquete de instalación Estrella Tour|IconGroups]
+Group0=EstrellaTour
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Paquete de instalación Estrella Tour|EstrellaTour]
+Icon1="EstrellaTour Nuevo.exe"
+Title1=EstrellaTour
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Paquete de instalación Estrella Tour|Package]
+PackageFolder=C:\Users\Juan\Desktop\Instalador
+ProjectFolder=C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo
+ServerSideCab=
+File1=C:\Users\Juan\Desktop\Instalador\setup.exe
+File2=C:\Users\Juan\Desktop\Instalador\Setup.Lst
+File3=C:\Users\Juan\Desktop\Instalador\EstrellaTour Nuevo.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Paquete de instalación estándar 4|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Users\Juan\Desktop\Instalador Estrella
+
+[Package|Paquete de instalación estándar 4|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Paquete de instalación estándar 4|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Paquete de instalación estándar 4|Files Found]
+
+[Package|Paquete de instalación estándar 4|Files Released]
+
+[Package|Paquete de instalación estándar 4|Missing Dependency Information]
+
+[Package|Paquete de instalación estándar 4|Out-of-Date Dependency Information]
+
+[Package|Paquete de instalación estándar 4|Files Added]
+
+[Package|Paquete de instalación estándar 4|Files Removed]
+
+[Package|Paquete de instalación estándar 4|Files In Project]
+C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo\EstrellaTour Nuevo.exe=Yes
+C:\Windows\system32\msvbvm60.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Windows\system32\VB6ES.DLL=Yes
+C:\Windows\system32\MSSTDFMT.DLL=Yes
+C:\Windows\system32\STDFTES.DLL=Yes
+C:\Windows\system32\MSDBRPTR.DLL=Yes
+C:\Windows\system32\DBRPRES.DLL=Yes
+C:\Program Files\Common Files\System\ado\msado27.tlb=Yes
+C:\Windows\system32\MSCOMCTL.OCX=Yes
+C:\Windows\system32\MSCMCES.DLL=Yes
+C:\Windows\system32\MSCOMCT2.OCX=Yes
+C:\Windows\system32\MSCC2ES.DLL=Yes
+C:\Windows\system32\MSMASK32.OCX=Yes
+C:\Windows\system32\MSMSKES.DLL=Yes
+C:\Windows\system32\COMDLG32.OCX=Yes
+C:\Windows\system32\CMDLGES.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Windows\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Paquete de instalación estándar 4|Configure Registry Files]
+Applicable=No
+
+[Package|Paquete de instalación estándar 4|Configure Remote Servers]
+Applicable=No
+
+[Package|Paquete de instalación estándar 4|Install Locations]
+C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo\EstrellaTour Nuevo.exe=$(AppPath)
+C:\Windows\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Windows\system32\VB6ES.DLL=$(WinSysPath)
+C:\Windows\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\Windows\system32\STDFTES.DLL=$(WinSysPath)
+C:\Windows\system32\MSDBRPTR.DLL=$(WinSysPath)
+C:\Windows\system32\DBRPRES.DLL=$(WinSysPath)
+C:\Program Files\Common Files\System\ado\msado27.tlb=$(WinSysPath)
+C:\Windows\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\Windows\system32\MSCMCES.DLL=$(WinSysPath)
+C:\Windows\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\Windows\system32\MSCC2ES.DLL=$(WinSysPath)
+C:\Windows\system32\MSMASK32.OCX=$(WinSysPath)
+C:\Windows\system32\MSMSKES.DLL=$(WinSysPath)
+C:\Windows\system32\COMDLG32.OCX=$(WinSysPath)
+C:\Windows\system32\CMDLGES.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Paquete de instalación estándar 4|Configure Shared Files]
+Applicable=Yes
+C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo\EstrellaTour Nuevo.exe=Yes
+
+[Package|Paquete de instalación estándar 4|Distribution]
+Type=single
+Size=
+Title=EstrellaTour
+
+[Package|Paquete de instalación estándar 4|IconGroups]
+Group0=EstrellaTour
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Paquete de instalación estándar 4|EstrellaTour]
+Icon1="EstrellaTour Nuevo.exe"
+Title1=EstrellaTour
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Paquete de instalación estándar 4|Package]
+PackageFolder=C:\Users\Juan\Desktop\Instalador Estrella
+ProjectFolder=C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo
+ServerSideCab=
+File1=C:\Users\Juan\Desktop\Instalador Estrella\setup.exe
+File2=C:\Users\Juan\Desktop\Instalador Estrella\Setup.Lst
+File3=C:\Users\Juan\Desktop\Instalador Estrella\EstrellaTour Nuevo.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Paquete de instalación estándar 5|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Users\Juan\Desktop\Instalador
+
+[Package|Paquete de instalación estándar 5|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Paquete de instalación estándar 5|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Paquete de instalación estándar 5|Files Found]
+
+[Package|Paquete de instalación estándar 5|Files Released]
+
+[Package|Paquete de instalación estándar 5|Missing Dependency Information]
+
+[Package|Paquete de instalación estándar 5|Out-of-Date Dependency Information]
+
+[Package|Paquete de instalación estándar 5|Files Added]
+C:\Windows\system32\MSDATREP.OCX=
+
+[Package|Paquete de instalación estándar 5|Files Removed]
+
+[Package|Paquete de instalación estándar 5|Files In Project]
+C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo\EstrellaTour Nuevo.exe=Yes
+C:\Windows\system32\msvbvm60.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Windows\system32\VB6ES.DLL=Yes
+C:\Windows\system32\MSSTDFMT.DLL=Yes
+C:\Windows\system32\STDFTES.DLL=Yes
+C:\Windows\system32\MSDBRPTR.DLL=Yes
+C:\Windows\system32\DBRPRES.DLL=Yes
+C:\Program Files\Common Files\System\ado\msado27.tlb=Yes
+C:\Windows\system32\MSCOMCTL.OCX=Yes
+C:\Windows\system32\MSCMCES.DLL=Yes
+C:\Windows\system32\MSCOMCT2.OCX=Yes
+C:\Windows\system32\MSCC2ES.DLL=Yes
+C:\Windows\system32\MSMASK32.OCX=Yes
+C:\Windows\system32\MSMSKES.DLL=Yes
+C:\Windows\system32\COMDLG32.OCX=Yes
+C:\Windows\system32\CMDLGES.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Windows\system32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Windows\system32\MSDATREP.OCX=Yes
+C:\Windows\system32\MSBIND.DLL=Yes
+C:\Windows\system32\DATRPES.DLL=Yes
+
+[Package|Paquete de instalación estándar 5|Configure Registry Files]
+Applicable=No
+
+[Package|Paquete de instalación estándar 5|Configure Remote Servers]
+Applicable=No
+
+[Package|Paquete de instalación estándar 5|Install Locations]
+C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo\EstrellaTour Nuevo.exe=$(AppPath)
+C:\Windows\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Windows\system32\VB6ES.DLL=$(WinSysPath)
+C:\Windows\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\Windows\system32\STDFTES.DLL=$(WinSysPath)
+C:\Windows\system32\MSDBRPTR.DLL=$(WinSysPath)
+C:\Windows\system32\DBRPRES.DLL=$(WinSysPath)
+C:\Program Files\Common Files\System\ado\msado27.tlb=$(WinSysPath)
+C:\Windows\system32\MSCOMCTL.OCX=$(WinSysPath)
+C:\Windows\system32\MSCMCES.DLL=$(WinSysPath)
+C:\Windows\system32\MSCOMCT2.OCX=$(WinSysPath)
+C:\Windows\system32\MSCC2ES.DLL=$(WinSysPath)
+C:\Windows\system32\MSMASK32.OCX=$(WinSysPath)
+C:\Windows\system32\MSMSKES.DLL=$(WinSysPath)
+C:\Windows\system32\COMDLG32.OCX=$(WinSysPath)
+C:\Windows\system32\CMDLGES.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Windows\system32\MSDATREP.OCX=$(WinSysPath)
+C:\Windows\system32\MSBIND.DLL=$(WinSysPath)
+C:\Windows\system32\DATRPES.DLL=$(WinSysPath)
+
+[Package|Paquete de instalación estándar 5|Configure Shared Files]
+Applicable=Yes
+C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo\EstrellaTour Nuevo.exe=No
+
+[Package|Paquete de instalación estándar 5|Distribution]
+Type=single
+Size=
+Title=EstrellaTour
+
+[Package|Paquete de instalación estándar 5|IconGroups]
+Group0=EstrellaTour
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Paquete de instalación estándar 5|EstrellaTour]
+Icon1="EstrellaTour Nuevo.exe"
+Title1=EstrellaTour
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Paquete de instalación estándar 5|Package]
+PackageFolder=C:\Users\Juan\Desktop\Instalador
+ProjectFolder=C:\Users\Juan\Desktop\EstrellaTour\Estrella Nuevo
+ServerSideCab=
+File1=C:\Users\Juan\Desktop\Instalador\setup.exe
+File2=C:\Users\Juan\Desktop\Instalador\Setup.Lst
+File3=C:\Users\Juan\Desktop\Instalador\EstrellaTour Nuevo.CAB
 Handler1=PDWizard.FolderDplySubWiz
 Handler2=PDWizard.WebPostDplySubWiz

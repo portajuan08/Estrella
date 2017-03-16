@@ -8,7 +8,7 @@ Begin VB.Form Inicio
    ClientHeight    =   10650
    ClientLeft      =   60
    ClientTop       =   1695
-   ClientWidth     =   15240
+   ClientWidth     =   15120
    BeginProperty Font 
       Name            =   "MS Sans Serif"
       Size            =   18
@@ -21,7 +21,7 @@ Begin VB.Form Inicio
    KeyPreview      =   -1  'True
    LinkTopic       =   "Form1"
    ScaleHeight     =   10650
-   ScaleWidth      =   15240
+   ScaleWidth      =   15120
    WindowState     =   2  'Maximized
    Begin VB.Timer Timer1 
       Enabled         =   0   'False
@@ -33,7 +33,7 @@ Begin VB.Form Inicio
       Caption         =   "Imprimir Viaje"
       Height          =   4335
       Left            =   5513
-      TabIndex        =   266
+      TabIndex        =   256
       Top             =   2948
       Visible         =   0   'False
       Width           =   4215
@@ -41,7 +41,7 @@ Begin VB.Form Inicio
          Caption         =   "Cancelar"
          Height          =   495
          Left            =   240
-         TabIndex        =   272
+         TabIndex        =   262
          Top             =   3360
          Width           =   1695
       End
@@ -49,21 +49,21 @@ Begin VB.Form Inicio
          Caption         =   "Imprimir"
          Height          =   495
          Left            =   2280
-         TabIndex        =   271
+         TabIndex        =   261
          Top             =   3360
          Width           =   1695
       End
       Begin VB.TextBox Text26 
          Height          =   555
          Left            =   240
-         TabIndex        =   270
+         TabIndex        =   260
          Top             =   2400
          Width           =   3735
       End
       Begin VB.ComboBox Combo9 
          Height          =   555
          Left            =   240
-         TabIndex        =   268
+         TabIndex        =   258
          Top             =   1080
          Width           =   3735
       End
@@ -73,7 +73,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   6
          Left            =   240
-         TabIndex        =   269
+         TabIndex        =   259
          Top             =   1800
          Width           =   3735
       End
@@ -83,7 +83,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   5
          Left            =   240
-         TabIndex        =   267
+         TabIndex        =   257
          Top             =   480
          Width           =   3735
       End
@@ -92,14 +92,14 @@ Begin VB.Form Inicio
       Caption         =   "Agregar Usuario"
       Height          =   3135
       Left            =   4680
-      TabIndex        =   313
+      TabIndex        =   303
       Top             =   4080
       Visible         =   0   'False
       Width           =   5655
       Begin VB.TextBox Text34 
          Height          =   555
          Left            =   2400
-         TabIndex        =   316
+         TabIndex        =   306
          Top             =   720
          Width           =   3015
       End
@@ -107,7 +107,7 @@ Begin VB.Form Inicio
          Caption         =   "Aceptar"
          Height          =   615
          Left            =   2040
-         TabIndex        =   315
+         TabIndex        =   305
          Top             =   2400
          Width           =   2055
       End
@@ -116,7 +116,7 @@ Begin VB.Form Inicio
          IMEMode         =   3  'DISABLE
          Left            =   2400
          PasswordChar    =   "*"
-         TabIndex        =   314
+         TabIndex        =   304
          Top             =   1560
          Width           =   3015
       End
@@ -124,7 +124,7 @@ Begin VB.Form Inicio
          Caption         =   "X"
          Height          =   375
          Left            =   5280
-         TabIndex        =   319
+         TabIndex        =   309
          Top             =   240
          Width           =   255
       End
@@ -133,7 +133,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   71
          Left            =   240
-         TabIndex        =   318
+         TabIndex        =   308
          Top             =   720
          Width           =   1575
       End
@@ -142,7 +142,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   70
          Left            =   240
-         TabIndex        =   317
+         TabIndex        =   307
          Top             =   1560
          Width           =   2175
       End
@@ -151,7 +151,7 @@ Begin VB.Form Inicio
       Caption         =   "Iniciar"
       Height          =   3255
       Left            =   4680
-      TabIndex        =   298
+      TabIndex        =   288
       Top             =   3960
       Width           =   5655
       Begin VB.TextBox Text30 
@@ -159,7 +159,7 @@ Begin VB.Form Inicio
          IMEMode         =   3  'DISABLE
          Left            =   2280
          PasswordChar    =   "*"
-         TabIndex        =   302
+         TabIndex        =   292
          Top             =   1560
          Width           =   3015
       End
@@ -167,14 +167,14 @@ Begin VB.Form Inicio
          Caption         =   "Aceptar"
          Height          =   615
          Left            =   1920
-         TabIndex        =   304
+         TabIndex        =   294
          Top             =   2400
          Width           =   2055
       End
       Begin VB.TextBox Text28 
          Height          =   555
          Left            =   2280
-         TabIndex        =   300
+         TabIndex        =   290
          Top             =   720
          Width           =   3015
       End
@@ -183,7 +183,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   67
          Left            =   120
-         TabIndex        =   301
+         TabIndex        =   291
          Top             =   1560
          Width           =   2175
       End
@@ -192,7 +192,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   66
          Left            =   120
-         TabIndex        =   299
+         TabIndex        =   289
          Top             =   720
          Width           =   1575
       End
@@ -201,7 +201,7 @@ Begin VB.Form Inicio
       Caption         =   "Cambiar Combi"
       Height          =   1935
       Left            =   5280
-      TabIndex        =   195
+      TabIndex        =   185
       Top             =   4200
       Visible         =   0   'False
       Width           =   4575
@@ -209,7 +209,7 @@ Begin VB.Form Inicio
          Caption         =   "Aceptar"
          Height          =   435
          Left            =   2640
-         TabIndex        =   199
+         TabIndex        =   189
          Top             =   1320
          Width           =   1695
       End
@@ -217,21 +217,21 @@ Begin VB.Form Inicio
          Caption         =   "Cancelar"
          Height          =   435
          Left            =   240
-         TabIndex        =   198
+         TabIndex        =   188
          Top             =   1320
          Width           =   1695
       End
       Begin VB.ComboBox Combo7 
          Height          =   555
          Left            =   1920
-         TabIndex        =   197
+         TabIndex        =   187
          Top             =   600
          Width           =   2415
       End
       Begin VB.Label lblIdCambiarCombi 
          Height          =   375
          Left            =   3120
-         TabIndex        =   200
+         TabIndex        =   190
          Top             =   360
          Visible         =   0   'False
          Width           =   495
@@ -241,7 +241,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   40
          Left            =   240
-         TabIndex        =   196
+         TabIndex        =   186
          Top             =   600
          Width           =   1455
       End
@@ -251,7 +251,7 @@ Begin VB.Form Inicio
       ForeColor       =   &H00008000&
       Height          =   10095
       Left            =   2753
-      TabIndex        =   71
+      TabIndex        =   64
       Top             =   75
       Visible         =   0   'False
       Width           =   9735
@@ -260,7 +260,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   8
          Left            =   240
-         TabIndex        =   236
+         TabIndex        =   226
          Top             =   4560
          Width           =   2055
       End
@@ -268,7 +268,7 @@ Begin VB.Form Inicio
          Caption         =   "Datos del Viaje a Agregar"
          Height          =   1335
          Left            =   240
-         TabIndex        =   80
+         TabIndex        =   73
          Top             =   8640
          Visible         =   0   'False
          Width           =   9255
@@ -276,14 +276,14 @@ Begin VB.Form Inicio
             Caption         =   "Agregar"
             Height          =   435
             Left            =   7200
-            TabIndex        =   82
+            TabIndex        =   75
             Top             =   480
             Width           =   1815
          End
          Begin MSComCtl2.DTPicker DTPicker2 
             Height          =   495
             Left            =   1320
-            TabIndex        =   81
+            TabIndex        =   74
             Top             =   480
             Width           =   1575
             _ExtentX        =   2778
@@ -299,14 +299,14 @@ Begin VB.Form Inicio
                Strikethrough   =   0   'False
             EndProperty
             CustomFormat    =   "HH:mm"
-            Format          =   94044163
+            Format          =   90636291
             UpDown          =   -1  'True
             CurrentDate     =   42273
          End
          Begin MSMask.MaskEdBox MaskEdBox3 
             Height          =   495
             Left            =   4920
-            TabIndex        =   83
+            TabIndex        =   76
             Top             =   480
             Width           =   2055
             _ExtentX        =   3625
@@ -329,7 +329,7 @@ Begin VB.Form Inicio
             Height          =   375
             Index           =   41
             Left            =   240
-            TabIndex        =   86
+            TabIndex        =   79
             Top             =   480
             Width           =   1095
          End
@@ -346,7 +346,7 @@ Begin VB.Form Inicio
             EndProperty
             Height          =   375
             Left            =   240
-            TabIndex        =   85
+            TabIndex        =   78
             Top             =   480
             Width           =   1575
          End
@@ -355,7 +355,7 @@ Begin VB.Form Inicio
             Height          =   375
             Index           =   42
             Left            =   3120
-            TabIndex        =   84
+            TabIndex        =   77
             Top             =   480
             Width           =   2055
          End
@@ -365,7 +365,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   0
          Left            =   240
-         TabIndex        =   79
+         TabIndex        =   72
          Top             =   720
          Width           =   1575
       End
@@ -374,7 +374,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   1
          Left            =   240
-         TabIndex        =   78
+         TabIndex        =   71
          Top             =   1200
          Width           =   2055
       End
@@ -383,7 +383,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   2
          Left            =   240
-         TabIndex        =   77
+         TabIndex        =   70
          Top             =   1680
          Width           =   1815
       End
@@ -392,7 +392,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   3
          Left            =   240
-         TabIndex        =   76
+         TabIndex        =   69
          Top             =   2160
          Width           =   1695
       End
@@ -401,7 +401,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   4
          Left            =   240
-         TabIndex        =   75
+         TabIndex        =   68
          Top             =   2640
          Width           =   2175
       End
@@ -410,7 +410,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   5
          Left            =   240
-         TabIndex        =   74
+         TabIndex        =   67
          Top             =   3120
          Width           =   1815
       End
@@ -419,7 +419,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   6
          Left            =   240
-         TabIndex        =   73
+         TabIndex        =   66
          Top             =   3600
          Width           =   1815
       End
@@ -428,14 +428,14 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   7
          Left            =   240
-         TabIndex        =   72
+         TabIndex        =   65
          Top             =   4080
          Width           =   1815
       End
       Begin MSComctlLib.ListView ListView9 
          Height          =   7815
          Left            =   2400
-         TabIndex        =   87
+         TabIndex        =   80
          Top             =   720
          Width           =   7095
          _ExtentX        =   12515
@@ -490,7 +490,7 @@ Begin VB.Form Inicio
          Caption         =   "X"
          Height          =   495
          Left            =   9240
-         TabIndex        =   88
+         TabIndex        =   81
          Top             =   240
          Width           =   375
       End
@@ -500,7 +500,7 @@ Begin VB.Form Inicio
       ForeColor       =   &H00C00000&
       Height          =   10095
       Left            =   2753
-      TabIndex        =   45
+      TabIndex        =   38
       Top             =   75
       Visible         =   0   'False
       Width           =   9735
@@ -509,7 +509,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   8
          Left            =   240
-         TabIndex        =   237
+         TabIndex        =   227
          Top             =   4560
          Width           =   2055
       End
@@ -518,7 +518,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   7
          Left            =   240
-         TabIndex        =   58
+         TabIndex        =   51
          Top             =   4080
          Width           =   1815
       End
@@ -527,7 +527,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   6
          Left            =   240
-         TabIndex        =   57
+         TabIndex        =   50
          Top             =   3600
          Width           =   1815
       End
@@ -536,7 +536,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   5
          Left            =   240
-         TabIndex        =   56
+         TabIndex        =   49
          Top             =   3120
          Width           =   1695
       End
@@ -545,7 +545,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   4
          Left            =   240
-         TabIndex        =   55
+         TabIndex        =   48
          Top             =   2640
          Width           =   2175
       End
@@ -554,7 +554,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   3
          Left            =   240
-         TabIndex        =   54
+         TabIndex        =   47
          Top             =   2160
          Width           =   2055
       End
@@ -563,7 +563,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   2
          Left            =   240
-         TabIndex        =   53
+         TabIndex        =   46
          Top             =   1680
          Width           =   2055
       End
@@ -572,7 +572,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   1
          Left            =   240
-         TabIndex        =   52
+         TabIndex        =   45
          Top             =   1200
          Width           =   2055
       End
@@ -581,7 +581,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   0
          Left            =   240
-         TabIndex        =   51
+         TabIndex        =   44
          Top             =   720
          Width           =   1575
       End
@@ -589,14 +589,14 @@ Begin VB.Form Inicio
          Caption         =   "Datos del Viaje a Agregar"
          Height          =   1335
          Left            =   240
-         TabIndex        =   46
+         TabIndex        =   39
          Top             =   8640
          Visible         =   0   'False
          Width           =   9255
          Begin MSComCtl2.DTPicker DTPicker1 
             Height          =   495
             Left            =   1320
-            TabIndex        =   59
+            TabIndex        =   52
             Top             =   480
             Width           =   1575
             _ExtentX        =   2778
@@ -612,7 +612,7 @@ Begin VB.Form Inicio
                Strikethrough   =   0   'False
             EndProperty
             CustomFormat    =   "HH:mm"
-            Format          =   94044163
+            Format          =   90636291
             UpDown          =   -1  'True
             CurrentDate     =   42273
          End
@@ -620,14 +620,14 @@ Begin VB.Form Inicio
             Caption         =   "Agregar"
             Height          =   435
             Left            =   7200
-            TabIndex        =   47
+            TabIndex        =   40
             Top             =   480
             Width           =   1815
          End
          Begin MSMask.MaskEdBox MaskEdBox2 
             Height          =   495
             Left            =   4920
-            TabIndex        =   61
+            TabIndex        =   54
             Top             =   480
             Width           =   2055
             _ExtentX        =   3625
@@ -650,7 +650,7 @@ Begin VB.Form Inicio
             Height          =   375
             Index           =   44
             Left            =   3120
-            TabIndex        =   60
+            TabIndex        =   53
             Top             =   480
             Width           =   2415
          End
@@ -659,7 +659,7 @@ Begin VB.Form Inicio
             Height          =   375
             Index           =   43
             Left            =   240
-            TabIndex        =   48
+            TabIndex        =   41
             Top             =   480
             Width           =   1575
          End
@@ -667,7 +667,7 @@ Begin VB.Form Inicio
       Begin MSComctlLib.ListView ListView6 
          Height          =   7815
          Left            =   2400
-         TabIndex        =   49
+         TabIndex        =   42
          Top             =   720
          Width           =   7095
          _ExtentX        =   12515
@@ -722,41 +722,9 @@ Begin VB.Form Inicio
          Caption         =   "X"
          Height          =   375
          Left            =   9240
-         TabIndex        =   50
+         TabIndex        =   43
          Top             =   240
          Width           =   375
-      End
-   End
-   Begin VB.Frame PASAR_OCUPADO 
-      Caption         =   "Indique la Parada"
-      Height          =   2175
-      Left            =   5573
-      TabIndex        =   254
-      Top             =   4028
-      Visible         =   0   'False
-      Width           =   4095
-      Begin VB.CommandButton Command30 
-         Caption         =   "Cancelar"
-         Height          =   435
-         Left            =   120
-         TabIndex        =   257
-         Top             =   1560
-         Width           =   1815
-      End
-      Begin VB.CommandButton Command31 
-         Caption         =   "Aceptar"
-         Height          =   435
-         Left            =   2160
-         TabIndex        =   256
-         Top             =   1560
-         Width           =   1815
-      End
-      Begin VB.ComboBox Combo8 
-         Height          =   555
-         Left            =   120
-         TabIndex        =   255
-         Top             =   720
-         Width           =   3855
       End
    End
    Begin VB.Frame COMBI 
@@ -1117,93 +1085,36 @@ Begin VB.Form Inicio
          Width           =   375
       End
    End
-   Begin VB.Frame GRUPO 
-      Caption         =   "Grupos"
-      Height          =   9855
-      Left            =   4133
-      TabIndex        =   38
-      Top             =   195
+   Begin VB.Frame PASAR_OCUPADO 
+      Caption         =   "Indique la Parada"
+      Height          =   2175
+      Left            =   5640
+      TabIndex        =   244
+      Top             =   4028
       Visible         =   0   'False
-      Width           =   6975
-      Begin VB.Frame Frame6 
-         Caption         =   "Datos Grupo"
-         Height          =   1215
+      Width           =   4095
+      Begin VB.CommandButton Command30 
+         Caption         =   "Cancelar"
+         Height          =   435
          Left            =   120
-         TabIndex        =   39
-         Top             =   8520
-         Width           =   6735
-         Begin VB.TextBox Text6 
-            Height          =   555
-            Left            =   1920
-            TabIndex        =   41
-            Top             =   480
-            Width           =   2535
-         End
-         Begin VB.CommandButton Command9 
-            Caption         =   "Agregar"
-            Height          =   435
-            Left            =   4680
-            TabIndex        =   40
-            Top             =   480
-            Width           =   1815
-         End
-         Begin VB.Label lblInformacion 
-            Caption         =   "Nombre"
-            Height          =   375
-            Index           =   50
-            Left            =   240
-            TabIndex        =   42
-            Top             =   480
-            Width           =   1455
-         End
+         TabIndex        =   247
+         Top             =   1560
+         Width           =   1815
       End
-      Begin MSComctlLib.ListView ListView5 
-         Height          =   7815
+      Begin VB.CommandButton Command31 
+         Caption         =   "Aceptar"
+         Height          =   435
+         Left            =   2160
+         TabIndex        =   246
+         Top             =   1560
+         Width           =   1815
+      End
+      Begin VB.ComboBox Combo8 
+         Height          =   555
          Left            =   120
-         TabIndex        =   43
+         TabIndex        =   245
          Top             =   720
-         Width           =   6735
-         _ExtentX        =   11880
-         _ExtentY        =   13785
-         View            =   3
-         LabelWrap       =   -1  'True
-         HideSelection   =   -1  'True
-         FullRowSelect   =   -1  'True
-         GridLines       =   -1  'True
-         _Version        =   393217
-         ForeColor       =   -2147483640
-         BackColor       =   -2147483643
-         BorderStyle     =   1
-         Appearance      =   1
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "MS Sans Serif"
-            Size            =   18
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         NumItems        =   2
-         BeginProperty ColumnHeader(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            Text            =   "ID"
-            Object.Width           =   0
-         EndProperty
-         BeginProperty ColumnHeader(2) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            Alignment       =   2
-            SubItemIndex    =   1
-            Text            =   "Grupo"
-            Object.Width           =   11730
-         EndProperty
-      End
-      Begin VB.Label Label14 
-         Alignment       =   1  'Right Justify
-         Caption         =   "X"
-         Height          =   375
-         Left            =   6480
-         TabIndex        =   44
-         Top             =   240
-         Width           =   375
+         Width           =   3855
       End
    End
    Begin VB.Frame CAMBIOS_VIAJE 
@@ -1219,14 +1130,14 @@ Begin VB.Form Inicio
       EndProperty
       Height          =   9975
       Left            =   0
-      TabIndex        =   283
+      TabIndex        =   273
       Top             =   120
       Visible         =   0   'False
       Width           =   15255
       Begin MSComctlLib.ListView ListView8 
          Height          =   7815
          Left            =   240
-         TabIndex        =   285
+         TabIndex        =   275
          Top             =   2040
          Width           =   7380
          _ExtentX        =   13018
@@ -1275,7 +1186,7 @@ Begin VB.Form Inicio
       Begin MSComctlLib.ListView ListView10 
          Height          =   7815
          Left            =   7680
-         TabIndex        =   286
+         TabIndex        =   276
          Top             =   2040
          Width           =   7380
          _ExtentX        =   13018
@@ -1325,7 +1236,7 @@ Begin VB.Form Inicio
          Caption         =   "X"
          Height          =   375
          Left            =   14760
-         TabIndex        =   289
+         TabIndex        =   279
          Top             =   360
          Width           =   255
       End
@@ -1345,7 +1256,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   22
          Left            =   7800
-         TabIndex        =   288
+         TabIndex        =   278
          Top             =   1440
          Width           =   7095
       End
@@ -1365,7 +1276,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   21
          Left            =   240
-         TabIndex        =   287
+         TabIndex        =   277
          Top             =   1440
          Width           =   7215
       End
@@ -1382,7 +1293,7 @@ Begin VB.Form Inicio
          EndProperty
          Height          =   855
          Left            =   600
-         TabIndex        =   284
+         TabIndex        =   274
          Top             =   600
          Width           =   14175
       End
@@ -1391,7 +1302,7 @@ Begin VB.Form Inicio
       Caption         =   "Feriados"
       Height          =   9735
       Left            =   533
-      TabIndex        =   238
+      TabIndex        =   228
       Top             =   240
       Visible         =   0   'False
       Width           =   14175
@@ -1399,13 +1310,13 @@ Begin VB.Form Inicio
          Caption         =   "Datos Feriado Nuevo"
          Height          =   9015
          Left            =   120
-         TabIndex        =   239
+         TabIndex        =   229
          Top             =   600
          Width           =   6015
          Begin VB.TextBox Text25 
             Height          =   555
             Left            =   120
-            TabIndex        =   241
+            TabIndex        =   231
             Top             =   6480
             Width           =   5775
          End
@@ -1413,14 +1324,14 @@ Begin VB.Form Inicio
             Caption         =   "Agregar"
             Height          =   435
             Left            =   120
-            TabIndex        =   240
+            TabIndex        =   230
             Top             =   7800
             Width           =   1815
          End
          Begin MSComCtl2.MonthView MonthView2 
             Height          =   4770
             Left            =   120
-            TabIndex        =   245
+            TabIndex        =   235
             Top             =   600
             Width           =   5745
             _ExtentX        =   10134
@@ -1439,7 +1350,7 @@ Begin VB.Form Inicio
                Strikethrough   =   0   'False
             EndProperty
             ShowToday       =   0   'False
-            StartOfWeek     =   94044162
+            StartOfWeek     =   90636290
             TitleBackColor  =   -2147483646
             TitleForeColor  =   -2147483639
             TrailingForeColor=   -2147483632
@@ -1450,7 +1361,7 @@ Begin VB.Form Inicio
             Height          =   375
             Index           =   23
             Left            =   120
-            TabIndex        =   242
+            TabIndex        =   232
             Top             =   5760
             Width           =   2415
          End
@@ -1458,7 +1369,7 @@ Begin VB.Form Inicio
       Begin MSComctlLib.ListView ListView17 
          Height          =   8895
          Left            =   6240
-         TabIndex        =   243
+         TabIndex        =   233
          Top             =   720
          Width           =   7695
          _ExtentX        =   13573
@@ -1505,7 +1416,7 @@ Begin VB.Form Inicio
          Caption         =   "X"
          Height          =   375
          Left            =   13680
-         TabIndex        =   244
+         TabIndex        =   234
          Top             =   240
          Width           =   375
       End
@@ -1514,22 +1425,36 @@ Begin VB.Form Inicio
       Caption         =   "Modificar Cliente"
       Height          =   9855
       Left            =   113
-      TabIndex        =   164
+      TabIndex        =   155
       Top             =   188
       Visible         =   0   'False
       Width           =   15015
+      Begin VB.TextBox vh 
+         Height          =   555
+         Left            =   4800
+         TabIndex        =   312
+         Top             =   7800
+         Width           =   3735
+      End
+      Begin VB.TextBox vd 
+         Height          =   555
+         Left            =   4800
+         TabIndex        =   311
+         Top             =   6600
+         Width           =   3735
+      End
       Begin VB.CheckBox MensualM 
          Caption         =   "Abona Mensual"
          Height          =   435
          Left            =   4800
-         TabIndex        =   320
+         TabIndex        =   310
          Top             =   5520
          Width           =   3735
       End
       Begin VB.TextBox Text21 
          Height          =   555
          Left            =   360
-         TabIndex        =   174
+         TabIndex        =   164
          Top             =   7800
          Width           =   3735
       End
@@ -1538,7 +1463,7 @@ Begin VB.Form Inicio
          Height          =   435
          Index           =   1
          Left            =   6000
-         TabIndex        =   173
+         TabIndex        =   163
          Top             =   4680
          Width           =   2295
       End
@@ -1547,7 +1472,7 @@ Begin VB.Form Inicio
          Height          =   435
          Index           =   0
          Left            =   6000
-         TabIndex        =   172
+         TabIndex        =   162
          Top             =   4080
          Value           =   -1  'True
          Width           =   2295
@@ -1555,7 +1480,7 @@ Begin VB.Form Inicio
       Begin VB.TextBox Text20 
          Height          =   555
          Left            =   360
-         TabIndex        =   171
+         TabIndex        =   161
          Top             =   6600
          Width           =   3735
       End
@@ -1564,7 +1489,7 @@ Begin VB.Form Inicio
          ItemData        =   "Inicio.frx":0000
          Left            =   360
          List            =   "Inicio.frx":0002
-         TabIndex        =   170
+         TabIndex        =   160
          Top             =   5400
          Width           =   3735
       End
@@ -1573,7 +1498,7 @@ Begin VB.Form Inicio
          ItemData        =   "Inicio.frx":0004
          Left            =   360
          List            =   "Inicio.frx":0006
-         TabIndex        =   169
+         TabIndex        =   159
          Top             =   4200
          Width           =   3735
       End
@@ -1581,7 +1506,7 @@ Begin VB.Form Inicio
          Caption         =   "ATRAS"
          Height          =   435
          Left            =   600
-         TabIndex        =   168
+         TabIndex        =   158
          Top             =   9000
          Width           =   2055
       End
@@ -1589,21 +1514,21 @@ Begin VB.Form Inicio
          Caption         =   "Modificar"
          Height          =   435
          Left            =   11640
-         TabIndex        =   167
+         TabIndex        =   314
          Top             =   9000
          Width           =   2055
       End
       Begin VB.TextBox Text19 
          Height          =   4095
          Left            =   9000
-         TabIndex        =   166
+         TabIndex        =   157
          Top             =   960
          Width           =   5775
       End
       Begin MSMask.MaskEdBox MaskEdBox5 
          Height          =   495
          Left            =   360
-         TabIndex        =   165
+         TabIndex        =   156
          Top             =   960
          Width           =   3735
          _ExtentX        =   6588
@@ -1623,7 +1548,7 @@ Begin VB.Form Inicio
       Begin MSMask.MaskEdBox MaskEdBox6 
          Height          =   495
          Left            =   360
-         TabIndex        =   175
+         TabIndex        =   165
          Top             =   2040
          Width           =   3735
          _ExtentX        =   6588
@@ -1643,7 +1568,7 @@ Begin VB.Form Inicio
       Begin MSMask.MaskEdBox MaskEdBox7 
          Height          =   495
          Left            =   360
-         TabIndex        =   176
+         TabIndex        =   166
          Top             =   3120
          Width           =   3735
          _ExtentX        =   6588
@@ -1654,7 +1579,7 @@ Begin VB.Form Inicio
       Begin MSMask.MaskEdBox MaskEdBox8 
          Height          =   495
          Left            =   4800
-         TabIndex        =   177
+         TabIndex        =   167
          Top             =   960
          Width           =   3735
          _ExtentX        =   6588
@@ -1675,7 +1600,7 @@ Begin VB.Form Inicio
       Begin MSMask.MaskEdBox MaskEdBox9 
          Height          =   495
          Left            =   4800
-         TabIndex        =   178
+         TabIndex        =   168
          Top             =   2040
          Width           =   3735
          _ExtentX        =   6588
@@ -1687,7 +1612,7 @@ Begin VB.Form Inicio
       Begin MSMask.MaskEdBox MaskEdBox10 
          Height          =   495
          Left            =   4800
-         TabIndex        =   179
+         TabIndex        =   169
          Top             =   3120
          Width           =   3735
          _ExtentX        =   6588
@@ -1696,10 +1621,30 @@ Begin VB.Form Inicio
          MaxLength       =   18
          PromptChar      =   "_"
       End
+      Begin VB.Label lblInformacion 
+         Alignment       =   2  'Center
+         Caption         =   "Vacaciones Desde(dd/mm/aaaa)"
+         Height          =   375
+         Index           =   73
+         Left            =   4680
+         TabIndex        =   319
+         Top             =   6120
+         Width           =   5895
+      End
+      Begin VB.Label lblInformacion 
+         Alignment       =   2  'Center
+         Caption         =   "Vacaciones Hasta(dd/mm/aaaa)"
+         Height          =   375
+         Index           =   72
+         Left            =   4680
+         TabIndex        =   318
+         Top             =   7320
+         Width           =   5775
+      End
       Begin VB.Label lblIdModificar 
          Height          =   375
          Left            =   120
-         TabIndex        =   192
+         TabIndex        =   182
          Top             =   480
          Visible         =   0   'False
          Width           =   1215
@@ -1710,7 +1655,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   24
          Left            =   360
-         TabIndex        =   191
+         TabIndex        =   181
          Top             =   480
          Width           =   3735
       End
@@ -1720,7 +1665,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   25
          Left            =   360
-         TabIndex        =   190
+         TabIndex        =   180
          Top             =   1560
          Width           =   3735
       End
@@ -1730,7 +1675,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   26
          Left            =   360
-         TabIndex        =   189
+         TabIndex        =   179
          Top             =   2640
          Width           =   3735
       End
@@ -1740,7 +1685,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   30
          Left            =   360
-         TabIndex        =   188
+         TabIndex        =   178
          Top             =   7320
          Width           =   3735
       End
@@ -1749,7 +1694,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   51
          Left            =   4800
-         TabIndex        =   187
+         TabIndex        =   177
          Top             =   4080
          Width           =   1455
       End
@@ -1759,7 +1704,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   33
          Left            =   4800
-         TabIndex        =   186
+         TabIndex        =   176
          Top             =   2640
          Width           =   3735
       End
@@ -1769,7 +1714,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   32
          Left            =   4800
-         TabIndex        =   185
+         TabIndex        =   175
          Top             =   1560
          Width           =   3735
       End
@@ -1779,7 +1724,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   31
          Left            =   4800
-         TabIndex        =   184
+         TabIndex        =   174
          Top             =   480
          Width           =   3735
       End
@@ -1789,7 +1734,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   29
          Left            =   360
-         TabIndex        =   183
+         TabIndex        =   173
          Top             =   6120
          Width           =   3615
       End
@@ -1799,7 +1744,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   28
          Left            =   360
-         TabIndex        =   182
+         TabIndex        =   172
          Top             =   4920
          Width           =   3735
       End
@@ -1809,7 +1754,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   27
          Left            =   360
-         TabIndex        =   181
+         TabIndex        =   171
          Top             =   3720
          Width           =   3735
       End
@@ -1819,7 +1764,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   52
          Left            =   9000
-         TabIndex        =   180
+         TabIndex        =   170
          Top             =   480
          Width           =   5775
       End
@@ -1828,7 +1773,7 @@ Begin VB.Form Inicio
       Caption         =   "Agenda"
       Height          =   10095
       Left            =   0
-      TabIndex        =   62
+      TabIndex        =   55
       Top             =   120
       Visible         =   0   'False
       Width           =   15255
@@ -1836,7 +1781,7 @@ Begin VB.Form Inicio
          Caption         =   ">>"
          Height          =   435
          Left            =   14160
-         TabIndex        =   253
+         TabIndex        =   243
          Top             =   9480
          Width           =   975
       End
@@ -1844,7 +1789,7 @@ Begin VB.Form Inicio
          Caption         =   ">"
          Height          =   435
          Left            =   12960
-         TabIndex        =   252
+         TabIndex        =   242
          Top             =   9480
          Width           =   975
       End
@@ -1852,7 +1797,7 @@ Begin VB.Form Inicio
          Caption         =   "<"
          Height          =   435
          Left            =   11760
-         TabIndex        =   251
+         TabIndex        =   241
          Top             =   9480
          Width           =   975
       End
@@ -1860,7 +1805,7 @@ Begin VB.Form Inicio
          Caption         =   "<<"
          Height          =   435
          Left            =   10560
-         TabIndex        =   250
+         TabIndex        =   240
          Top             =   9480
          Width           =   975
       End
@@ -1877,7 +1822,7 @@ Begin VB.Form Inicio
          EndProperty
          Height          =   495
          Left            =   4560
-         TabIndex        =   163
+         TabIndex        =   154
          Top             =   720
          Visible         =   0   'False
          Width           =   3135
@@ -1894,7 +1839,7 @@ Begin VB.Form Inicio
          EndProperty
          Height          =   555
          Left            =   10320
-         TabIndex        =   66
+         TabIndex        =   59
          Top             =   720
          Width           =   4815
       End
@@ -1911,7 +1856,7 @@ Begin VB.Form Inicio
          EndProperty
          Height          =   495
          Left            =   8520
-         TabIndex        =   65
+         TabIndex        =   58
          Top             =   720
          Width           =   1695
       End
@@ -1928,14 +1873,14 @@ Begin VB.Form Inicio
          EndProperty
          Height          =   495
          Left            =   240
-         TabIndex        =   64
+         TabIndex        =   57
          Top             =   720
          Width           =   2055
       End
       Begin MSComctlLib.ListView ListView7 
          Height          =   7935
          Left            =   120
-         TabIndex        =   63
+         TabIndex        =   56
          Top             =   1440
          Width           =   15015
          _ExtentX        =   26485
@@ -1995,7 +1940,7 @@ Begin VB.Form Inicio
          Caption         =   "100"
          Height          =   375
          Left            =   3240
-         TabIndex        =   249
+         TabIndex        =   239
          Top             =   9480
          Width           =   735
       End
@@ -2004,7 +1949,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   54
          Left            =   2640
-         TabIndex        =   248
+         TabIndex        =   238
          Top             =   9480
          Width           =   615
       End
@@ -2014,7 +1959,7 @@ Begin VB.Form Inicio
          Caption         =   "1"
          Height          =   375
          Left            =   1680
-         TabIndex        =   247
+         TabIndex        =   237
          Top             =   9480
          Width           =   735
       End
@@ -2023,7 +1968,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   53
          Left            =   240
-         TabIndex        =   246
+         TabIndex        =   236
          Top             =   9480
          Width           =   1335
       End
@@ -2032,7 +1977,7 @@ Begin VB.Form Inicio
          Caption         =   "X"
          Height          =   375
          Left            =   14760
-         TabIndex        =   67
+         TabIndex        =   60
          Top             =   240
          Width           =   375
       End
@@ -2041,7 +1986,7 @@ Begin VB.Form Inicio
       Caption         =   "Ver Historial"
       Height          =   10095
       Left            =   0
-      TabIndex        =   222
+      TabIndex        =   212
       Top             =   120
       Visible         =   0   'False
       Width           =   15255
@@ -2050,7 +1995,7 @@ Begin VB.Form Inicio
          Height          =   435
          Index           =   7
          Left            =   14160
-         TabIndex        =   276
+         TabIndex        =   266
          Top             =   9480
          Width           =   975
       End
@@ -2059,7 +2004,7 @@ Begin VB.Form Inicio
          Height          =   435
          Index           =   6
          Left            =   12960
-         TabIndex        =   275
+         TabIndex        =   265
          Top             =   9480
          Width           =   975
       End
@@ -2068,7 +2013,7 @@ Begin VB.Form Inicio
          Height          =   435
          Index           =   5
          Left            =   11760
-         TabIndex        =   274
+         TabIndex        =   264
          Top             =   9480
          Width           =   975
       End
@@ -2077,14 +2022,14 @@ Begin VB.Form Inicio
          Height          =   435
          Index           =   4
          Left            =   10560
-         TabIndex        =   273
+         TabIndex        =   263
          Top             =   9480
          Width           =   975
       End
       Begin MSComctlLib.ListView ListView16 
          Height          =   7335
          Left            =   4800
-         TabIndex        =   233
+         TabIndex        =   223
          Top             =   2100
          Width           =   10335
          _ExtentX        =   18230
@@ -2137,17 +2082,26 @@ Begin VB.Form Inicio
       End
       Begin VB.Frame Frame11 
          Caption         =   "Razones"
-         Height          =   6135
+         Height          =   6975
          Left            =   120
-         TabIndex        =   226
+         TabIndex        =   216
          Top             =   1920
          Width           =   4575
+         Begin VB.OptionButton Razones 
+            Caption         =   "Cambio de Parada"
+            Height          =   615
+            Index           =   6
+            Left            =   240
+            TabIndex        =   316
+            Top             =   6000
+            Width           =   4095
+         End
          Begin VB.OptionButton Razones 
             Caption         =   "Venta Pasaje Manual"
             Height          =   495
             Index           =   5
             Left            =   240
-            TabIndex        =   232
+            TabIndex        =   222
             Top             =   5160
             Width           =   4095
          End
@@ -2156,7 +2110,7 @@ Begin VB.Form Inicio
             Height          =   495
             Index           =   4
             Left            =   240
-            TabIndex        =   231
+            TabIndex        =   221
             Top             =   4200
             Width           =   3615
          End
@@ -2165,7 +2119,7 @@ Begin VB.Form Inicio
             Height          =   495
             Index           =   3
             Left            =   240
-            TabIndex        =   230
+            TabIndex        =   220
             Top             =   3360
             Width           =   3735
          End
@@ -2174,7 +2128,7 @@ Begin VB.Form Inicio
             Height          =   495
             Index           =   2
             Left            =   240
-            TabIndex        =   229
+            TabIndex        =   219
             Top             =   2520
             Width           =   3735
          End
@@ -2183,7 +2137,7 @@ Begin VB.Form Inicio
             Height          =   495
             Index           =   1
             Left            =   240
-            TabIndex        =   228
+            TabIndex        =   218
             Top             =   1680
             Width           =   2295
          End
@@ -2192,7 +2146,7 @@ Begin VB.Form Inicio
             Height          =   495
             Index           =   0
             Left            =   240
-            TabIndex        =   227
+            TabIndex        =   217
             Top             =   840
             Width           =   2295
          End
@@ -2201,14 +2155,14 @@ Begin VB.Form Inicio
          Caption         =   "Datos del Cliente"
          Height          =   1215
          Left            =   120
-         TabIndex        =   223
+         TabIndex        =   213
          Top             =   600
          Width           =   15015
          Begin VB.Label DNI_HISTORIAL 
             Caption         =   "DNI: 37030422"
             Height          =   495
             Left            =   11760
-            TabIndex        =   225
+            TabIndex        =   215
             Top             =   480
             Width           =   3015
          End
@@ -2216,7 +2170,7 @@ Begin VB.Form Inicio
             Caption         =   "Nombre del Cliente: JUAN ROBERTO PORTA"
             Height          =   615
             Left            =   120
-            TabIndex        =   224
+            TabIndex        =   214
             Top             =   480
             Width           =   10455
          End
@@ -2227,7 +2181,7 @@ Begin VB.Form Inicio
          Caption         =   "100"
          Height          =   375
          Left            =   3240
-         TabIndex        =   280
+         TabIndex        =   270
          Top             =   9480
          Width           =   735
       End
@@ -2236,7 +2190,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   20
          Left            =   2640
-         TabIndex        =   279
+         TabIndex        =   269
          Top             =   9480
          Width           =   615
       End
@@ -2246,7 +2200,7 @@ Begin VB.Form Inicio
          Caption         =   "1"
          Height          =   375
          Left            =   1680
-         TabIndex        =   278
+         TabIndex        =   268
          Top             =   9480
          Width           =   735
       End
@@ -2255,7 +2209,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   7
          Left            =   240
-         TabIndex        =   277
+         TabIndex        =   267
          Top             =   9480
          Width           =   1335
       End
@@ -2263,7 +2217,7 @@ Begin VB.Form Inicio
          Caption         =   "X"
          Height          =   495
          Left            =   14760
-         TabIndex        =   234
+         TabIndex        =   224
          Top             =   240
          Width           =   375
       End
@@ -2272,22 +2226,36 @@ Begin VB.Form Inicio
       Caption         =   "Agregar Cliente"
       Height          =   9855
       Left            =   60
-      TabIndex        =   92
+      TabIndex        =   85
       Top             =   188
       Visible         =   0   'False
       Width           =   15135
+      Begin VB.TextBox vha 
+         Height          =   555
+         Left            =   4800
+         TabIndex        =   321
+         Top             =   7800
+         Width           =   3735
+      End
+      Begin VB.TextBox vda 
+         Height          =   555
+         Left            =   4800
+         TabIndex        =   320
+         Top             =   6600
+         Width           =   3735
+      End
       Begin VB.CheckBox MensualA 
          Caption         =   "Abona Mensual"
          Height          =   495
-         Left            =   4800
-         TabIndex        =   321
+         Left            =   4920
+         TabIndex        =   313
          Top             =   5520
          Width           =   3855
       End
       Begin MSMask.MaskEdBox Text8 
          Height          =   495
          Left            =   360
-         TabIndex        =   106
+         TabIndex        =   99
          Top             =   960
          Width           =   3735
          _ExtentX        =   6588
@@ -2307,7 +2275,7 @@ Begin VB.Form Inicio
       Begin VB.TextBox Text15 
          Height          =   4095
          Left            =   9000
-         TabIndex        =   123
+         TabIndex        =   116
          Top             =   960
          Width           =   5775
       End
@@ -2315,7 +2283,7 @@ Begin VB.Form Inicio
          Caption         =   "AGREGAR"
          Height          =   435
          Left            =   11640
-         TabIndex        =   125
+         TabIndex        =   118
          Top             =   9000
          Width           =   2055
       End
@@ -2323,7 +2291,7 @@ Begin VB.Form Inicio
          Caption         =   "ATRAS"
          Height          =   435
          Left            =   600
-         TabIndex        =   127
+         TabIndex        =   120
          Top             =   9000
          Width           =   2055
       End
@@ -2332,7 +2300,7 @@ Begin VB.Form Inicio
          ItemData        =   "Inicio.frx":0008
          Left            =   360
          List            =   "Inicio.frx":000A
-         TabIndex        =   109
+         TabIndex        =   102
          Top             =   4200
          Width           =   3735
       End
@@ -2341,14 +2309,14 @@ Begin VB.Form Inicio
          ItemData        =   "Inicio.frx":000C
          Left            =   360
          List            =   "Inicio.frx":000E
-         TabIndex        =   110
+         TabIndex        =   103
          Top             =   5400
          Width           =   3735
       End
       Begin VB.TextBox Text14 
          Height          =   555
          Left            =   360
-         TabIndex        =   111
+         TabIndex        =   104
          Text            =   "00"
          Top             =   6600
          Width           =   3735
@@ -2358,7 +2326,7 @@ Begin VB.Form Inicio
          Height          =   435
          Index           =   0
          Left            =   6000
-         TabIndex        =   121
+         TabIndex        =   114
          Top             =   4080
          Value           =   -1  'True
          Width           =   2295
@@ -2368,14 +2336,14 @@ Begin VB.Form Inicio
          Height          =   435
          Index           =   1
          Left            =   6000
-         TabIndex        =   94
+         TabIndex        =   87
          Top             =   4680
          Width           =   2295
       End
       Begin VB.TextBox Text29 
          Height          =   555
          Left            =   360
-         TabIndex        =   113
+         TabIndex        =   106
          Text            =   "00"
          Top             =   7800
          Width           =   3735
@@ -2383,7 +2351,7 @@ Begin VB.Form Inicio
       Begin MSMask.MaskEdBox Text9 
          Height          =   495
          Left            =   360
-         TabIndex        =   107
+         TabIndex        =   100
          Top             =   2040
          Width           =   3735
          _ExtentX        =   6588
@@ -2403,7 +2371,7 @@ Begin VB.Form Inicio
       Begin MSMask.MaskEdBox Text10 
          Height          =   495
          Left            =   360
-         TabIndex        =   108
+         TabIndex        =   101
          Top             =   3120
          Width           =   3735
          _ExtentX        =   6588
@@ -2414,7 +2382,7 @@ Begin VB.Form Inicio
       Begin MSMask.MaskEdBox Text13 
          Height          =   495
          Left            =   4800
-         TabIndex        =   115
+         TabIndex        =   108
          Top             =   960
          Width           =   3735
          _ExtentX        =   6588
@@ -2435,7 +2403,7 @@ Begin VB.Form Inicio
       Begin MSMask.MaskEdBox Text11 
          Height          =   495
          Left            =   4800
-         TabIndex        =   117
+         TabIndex        =   110
          Top             =   2040
          Width           =   3735
          _ExtentX        =   6588
@@ -2447,7 +2415,7 @@ Begin VB.Form Inicio
       Begin MSMask.MaskEdBox Text12 
          Height          =   495
          Left            =   4800
-         TabIndex        =   119
+         TabIndex        =   112
          Top             =   3120
          Width           =   3735
          _ExtentX        =   6588
@@ -2458,11 +2426,31 @@ Begin VB.Form Inicio
       End
       Begin VB.Label lblInformacion 
          Alignment       =   2  'Center
+         Caption         =   "Vacaciones Hasta(dd/mm/aaaa)"
+         Height          =   375
+         Index           =   75
+         Left            =   4800
+         TabIndex        =   323
+         Top             =   7320
+         Width           =   5655
+      End
+      Begin VB.Label lblInformacion 
+         Alignment       =   2  'Center
+         Caption         =   "Vacaciones Desde(dd/mm/aaaa)"
+         Height          =   375
+         Index           =   74
+         Left            =   4800
+         TabIndex        =   322
+         Top             =   6120
+         Width           =   5775
+      End
+      Begin VB.Label lblInformacion 
+         Alignment       =   2  'Center
          Caption         =   "Observaciones"
          Height          =   375
          Index           =   18
          Left            =   9000
-         TabIndex        =   105
+         TabIndex        =   98
          Top             =   480
          Width           =   5775
       End
@@ -2472,7 +2460,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   11
          Left            =   360
-         TabIndex        =   104
+         TabIndex        =   97
          Top             =   3720
          Width           =   3735
       End
@@ -2482,7 +2470,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   12
          Left            =   360
-         TabIndex        =   103
+         TabIndex        =   96
          Top             =   4920
          Width           =   3735
       End
@@ -2492,7 +2480,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   13
          Left            =   360
-         TabIndex        =   102
+         TabIndex        =   95
          Top             =   6120
          Width           =   3615
       End
@@ -2502,7 +2490,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   17
          Left            =   4800
-         TabIndex        =   101
+         TabIndex        =   94
          Top             =   480
          Width           =   3735
       End
@@ -2512,7 +2500,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   16
          Left            =   4800
-         TabIndex        =   100
+         TabIndex        =   93
          Top             =   1560
          Width           =   3735
       End
@@ -2522,7 +2510,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   15
          Left            =   4800
-         TabIndex        =   99
+         TabIndex        =   92
          Top             =   2640
          Width           =   3735
       End
@@ -2531,7 +2519,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   19
          Left            =   4800
-         TabIndex        =   98
+         TabIndex        =   91
          Top             =   4080
          Width           =   1455
       End
@@ -2541,7 +2529,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   14
          Left            =   360
-         TabIndex        =   97
+         TabIndex        =   90
          Top             =   7320
          Width           =   3735
       End
@@ -2551,7 +2539,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   10
          Left            =   360
-         TabIndex        =   96
+         TabIndex        =   89
          Top             =   2640
          Width           =   3735
       End
@@ -2561,7 +2549,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   9
          Left            =   360
-         TabIndex        =   95
+         TabIndex        =   88
          Top             =   1560
          Width           =   3735
       End
@@ -2571,7 +2559,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   8
          Left            =   360
-         TabIndex        =   93
+         TabIndex        =   86
          Top             =   480
          Width           =   3735
       End
@@ -2580,7 +2568,7 @@ Begin VB.Form Inicio
       Caption         =   "Viajes Fijos Por Persona"
       Height          =   10095
       Left            =   0
-      TabIndex        =   112
+      TabIndex        =   105
       Top             =   120
       Visible         =   0   'False
       Width           =   15255
@@ -2589,7 +2577,7 @@ Begin VB.Form Inicio
          Height          =   435
          Index           =   0
          Left            =   120
-         TabIndex        =   261
+         TabIndex        =   251
          Top             =   9480
          Width           =   975
       End
@@ -2598,7 +2586,7 @@ Begin VB.Form Inicio
          Height          =   435
          Index           =   1
          Left            =   1320
-         TabIndex        =   260
+         TabIndex        =   250
          Top             =   9480
          Width           =   975
       End
@@ -2607,7 +2595,7 @@ Begin VB.Form Inicio
          Height          =   435
          Index           =   2
          Left            =   2520
-         TabIndex        =   259
+         TabIndex        =   249
          Top             =   9480
          Width           =   975
       End
@@ -2616,7 +2604,7 @@ Begin VB.Form Inicio
          Height          =   435
          Index           =   3
          Left            =   3720
-         TabIndex        =   258
+         TabIndex        =   248
          Top             =   9480
          Width           =   975
       End
@@ -2625,7 +2613,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   8
          Left            =   5760
-         TabIndex        =   235
+         TabIndex        =   225
          Top             =   5520
          Width           =   1935
       End
@@ -2634,7 +2622,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   7
          Left            =   5760
-         TabIndex        =   209
+         TabIndex        =   199
          Top             =   5060
          Width           =   1815
       End
@@ -2643,7 +2631,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   6
          Left            =   5760
-         TabIndex        =   208
+         TabIndex        =   198
          Top             =   4560
          Width           =   1815
       End
@@ -2652,7 +2640,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   5
          Left            =   5760
-         TabIndex        =   207
+         TabIndex        =   197
          Top             =   4060
          Width           =   1815
       End
@@ -2661,7 +2649,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   4
          Left            =   5760
-         TabIndex        =   206
+         TabIndex        =   196
          Top             =   3560
          Width           =   2175
       End
@@ -2670,7 +2658,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   3
          Left            =   5760
-         TabIndex        =   205
+         TabIndex        =   195
          Top             =   3060
          Width           =   1695
       End
@@ -2679,7 +2667,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   2
          Left            =   5760
-         TabIndex        =   204
+         TabIndex        =   194
          Top             =   2560
          Width           =   1815
       End
@@ -2688,7 +2676,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   1
          Left            =   5760
-         TabIndex        =   203
+         TabIndex        =   193
          Top             =   2060
          Width           =   2055
       End
@@ -2697,7 +2685,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   0
          Left            =   5760
-         TabIndex        =   202
+         TabIndex        =   192
          Top             =   1560
          Width           =   1575
       End
@@ -2714,7 +2702,7 @@ Begin VB.Form Inicio
          EndProperty
          Height          =   495
          Left            =   5760
-         TabIndex        =   126
+         TabIndex        =   119
          Top             =   960
          Width           =   1455
       End
@@ -2730,14 +2718,14 @@ Begin VB.Form Inicio
          EndProperty
          Height          =   480
          Left            =   120
-         TabIndex        =   124
+         TabIndex        =   117
          Top             =   960
          Width           =   5535
       End
       Begin MSComctlLib.ListView ListView11 
          Height          =   7215
          Left            =   120
-         TabIndex        =   114
+         TabIndex        =   107
          Top             =   1680
          Width           =   5535
          _ExtentX        =   9763
@@ -2767,7 +2755,7 @@ Begin VB.Form Inicio
       Begin MSComctlLib.ListView ListSalidaPorPersona 
          Height          =   8415
          Left            =   8040
-         TabIndex        =   116
+         TabIndex        =   109
          Top             =   1560
          Width           =   3495
          _ExtentX        =   6165
@@ -2799,7 +2787,7 @@ Begin VB.Form Inicio
       Begin MSComctlLib.ListView ListRegresoPorPersona 
          Height          =   8415
          Left            =   11640
-         TabIndex        =   118
+         TabIndex        =   111
          Top             =   1560
          Width           =   3495
          _ExtentX        =   6165
@@ -2832,7 +2820,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   55
          Left            =   120
-         TabIndex        =   265
+         TabIndex        =   255
          Top             =   9000
          Width           =   1335
       End
@@ -2842,7 +2830,7 @@ Begin VB.Form Inicio
          Caption         =   "1"
          Height          =   375
          Left            =   1560
-         TabIndex        =   264
+         TabIndex        =   254
          Top             =   9000
          Width           =   735
       End
@@ -2851,7 +2839,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   56
          Left            =   2520
-         TabIndex        =   263
+         TabIndex        =   253
          Top             =   9000
          Width           =   615
       End
@@ -2861,7 +2849,7 @@ Begin VB.Form Inicio
          Caption         =   "100"
          Height          =   375
          Left            =   3120
-         TabIndex        =   262
+         TabIndex        =   252
          Top             =   9000
          Width           =   735
       End
@@ -2881,7 +2869,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   58
          Left            =   11640
-         TabIndex        =   122
+         TabIndex        =   115
          Top             =   1080
          Width           =   3495
       End
@@ -2901,7 +2889,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   57
          Left            =   8040
-         TabIndex        =   120
+         TabIndex        =   113
          Top             =   1080
          Width           =   3495
       End
@@ -2910,7 +2898,7 @@ Begin VB.Form Inicio
       Caption         =   "Cambiar Contraseña"
       Height          =   4815
       Left            =   4373
-      TabIndex        =   303
+      TabIndex        =   293
       Top             =   2708
       Visible         =   0   'False
       Width           =   6495
@@ -2919,7 +2907,7 @@ Begin VB.Form Inicio
          IMEMode         =   3  'DISABLE
          Left            =   2520
          PasswordChar    =   "*"
-         TabIndex        =   310
+         TabIndex        =   300
          Top             =   2880
          Width           =   3855
       End
@@ -2928,7 +2916,7 @@ Begin VB.Form Inicio
          IMEMode         =   3  'DISABLE
          Left            =   2520
          PasswordChar    =   "*"
-         TabIndex        =   307
+         TabIndex        =   297
          Top             =   960
          Width           =   3855
       End
@@ -2936,7 +2924,7 @@ Begin VB.Form Inicio
          Caption         =   "Aceptar"
          Height          =   615
          Left            =   2400
-         TabIndex        =   306
+         TabIndex        =   296
          Top             =   3840
          Width           =   2055
       End
@@ -2945,7 +2933,7 @@ Begin VB.Form Inicio
          IMEMode         =   3  'DISABLE
          Left            =   2520
          PasswordChar    =   "*"
-         TabIndex        =   305
+         TabIndex        =   295
          Top             =   1920
          Width           =   3855
       End
@@ -2953,7 +2941,7 @@ Begin VB.Form Inicio
          Caption         =   "X"
          Height          =   375
          Left            =   6120
-         TabIndex        =   312
+         TabIndex        =   302
          Top             =   360
          Width           =   255
       End
@@ -2962,7 +2950,7 @@ Begin VB.Form Inicio
          Height          =   975
          Index           =   69
          Left            =   120
-         TabIndex        =   311
+         TabIndex        =   301
          Top             =   2640
          Width           =   2175
       End
@@ -2971,7 +2959,7 @@ Begin VB.Form Inicio
          Height          =   855
          Index           =   68
          Left            =   120
-         TabIndex        =   309
+         TabIndex        =   299
          Top             =   720
          Width           =   2175
       End
@@ -2980,7 +2968,7 @@ Begin VB.Form Inicio
          Height          =   975
          Index           =   39
          Left            =   120
-         TabIndex        =   308
+         TabIndex        =   298
          Top             =   1680
          Width           =   2175
       End
@@ -2989,7 +2977,7 @@ Begin VB.Form Inicio
       Caption         =   "Borrar Pasaje"
       Height          =   8055
       Left            =   2993
-      TabIndex        =   210
+      TabIndex        =   200
       Top             =   1080
       Visible         =   0   'False
       Width           =   9255
@@ -2997,7 +2985,7 @@ Begin VB.Form Inicio
          Caption         =   "Cancelar"
          Height          =   615
          Left            =   480
-         TabIndex        =   218
+         TabIndex        =   208
          Top             =   6960
          Width           =   2295
       End
@@ -3005,14 +2993,14 @@ Begin VB.Form Inicio
          Caption         =   "Eliminar"
          Height          =   615
          Left            =   6600
-         TabIndex        =   217
+         TabIndex        =   207
          Top             =   6960
          Width           =   2295
       End
       Begin VB.TextBox Text23 
          Height          =   1695
          Left            =   3000
-         TabIndex        =   216
+         TabIndex        =   206
          Top             =   3840
          Width           =   5895
       End
@@ -3021,7 +3009,7 @@ Begin VB.Form Inicio
          Height          =   435
          Index           =   3
          Left            =   3000
-         TabIndex        =   213
+         TabIndex        =   203
          Top             =   2880
          Width           =   4095
       End
@@ -3030,7 +3018,7 @@ Begin VB.Form Inicio
          Height          =   435
          Index           =   2
          Left            =   3000
-         TabIndex        =   212
+         TabIndex        =   202
          Top             =   2280
          Width           =   3855
       End
@@ -3039,7 +3027,7 @@ Begin VB.Form Inicio
          Height          =   435
          Index           =   1
          Left            =   3000
-         TabIndex        =   211
+         TabIndex        =   201
          Top             =   1800
          Value           =   -1  'True
          Width           =   2175
@@ -3047,7 +3035,7 @@ Begin VB.Form Inicio
       Begin VB.Label lblNombreEliminar 
          Height          =   495
          Left            =   240
-         TabIndex        =   221
+         TabIndex        =   211
          Top             =   3000
          Visible         =   0   'False
          Width           =   1455
@@ -3055,14 +3043,14 @@ Begin VB.Form Inicio
       Begin VB.Label lblDescripEliminar 
          Height          =   1095
          Left            =   240
-         TabIndex        =   220
+         TabIndex        =   210
          Top             =   480
          Width           =   8655
       End
       Begin VB.Label lblIdEliminar 
          Height          =   495
          Left            =   480
-         TabIndex        =   219
+         TabIndex        =   209
          Top             =   1200
          Visible         =   0   'False
          Width           =   1095
@@ -3072,7 +3060,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   38
          Left            =   480
-         TabIndex        =   215
+         TabIndex        =   205
          Top             =   3840
          Width           =   2535
       End
@@ -3081,7 +3069,7 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   37
          Left            =   360
-         TabIndex        =   214
+         TabIndex        =   204
          Top             =   1800
          Width           =   1335
       End
@@ -3210,39 +3198,80 @@ Begin VB.Form Inicio
    End
    Begin VB.Frame ED_PASAJE 
       Caption         =   "Editar Pasaje"
-      Height          =   4575
-      Left            =   5273
-      TabIndex        =   290
-      Top             =   2828
+      Height          =   7695
+      Left            =   2753
+      TabIndex        =   280
+      Top             =   1478
       Visible         =   0   'False
-      Width           =   4695
+      Width           =   9735
+      Begin VB.CheckBox Check2 
+         Caption         =   "Factura"
+         Height          =   435
+         Left            =   240
+         TabIndex        =   326
+         Top             =   6120
+         Width           =   3855
+      End
+      Begin VB.TextBox Text35 
+         Height          =   3735
+         Left            =   4680
+         TabIndex        =   324
+         Top             =   2880
+         Width           =   4695
+      End
+      Begin VB.CheckBox Check1 
+         Caption         =   "Reserva Pasaje"
+         Height          =   435
+         Left            =   240
+         TabIndex        =   317
+         Top             =   5280
+         Width           =   3855
+      End
       Begin VB.CommandButton Command34 
          Caption         =   "Editar"
          Height          =   615
-         Left            =   840
-         TabIndex        =   295
-         Top             =   3600
+         Left            =   6053
+         TabIndex        =   285
+         Top             =   6840
          Width           =   3135
       End
       Begin VB.TextBox Text27 
          Height          =   555
          Left            =   240
-         TabIndex        =   294
-         Top             =   2640
+         TabIndex        =   284
+         Top             =   4320
          Width           =   4215
       End
       Begin VB.ComboBox Combo10 
          Height          =   555
          Left            =   240
-         TabIndex        =   291
-         Top             =   1200
+         TabIndex        =   281
+         Top             =   2880
          Width           =   4215
+      End
+      Begin VB.Label lblInformacion 
+         Alignment       =   2  'Center
+         Caption         =   "Observación"
+         Height          =   375
+         Index           =   76
+         Left            =   4680
+         TabIndex        =   325
+         Top             =   2160
+         Width           =   4935
+      End
+      Begin VB.Label lblInfoVenta 
+         Caption         =   "El pasaje fue vendido por SISTEMA a las 26/02/2017 15:04"
+         Height          =   1215
+         Left            =   480
+         TabIndex        =   315
+         Top             =   720
+         Width           =   8895
       End
       Begin VB.Label Label25 
          Caption         =   "X"
          Height          =   495
-         Left            =   4320
-         TabIndex        =   296
+         Left            =   9360
+         TabIndex        =   286
          Top             =   240
          Width           =   255
       End
@@ -3252,8 +3281,8 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   35
          Left            =   240
-         TabIndex        =   293
-         Top             =   2040
+         TabIndex        =   283
+         Top             =   3600
          Width           =   4215
       End
       Begin VB.Label lblInformacion 
@@ -3262,8 +3291,8 @@ Begin VB.Form Inicio
          Height          =   495
          Index           =   34
          Left            =   240
-         TabIndex        =   292
-         Top             =   600
+         TabIndex        =   282
+         Top             =   2160
          Width           =   4215
       End
    End
@@ -3271,7 +3300,7 @@ Begin VB.Form Inicio
       Caption         =   "Venta de Pasajes"
       Height          =   10095
       Left            =   0
-      TabIndex        =   68
+      TabIndex        =   61
       Top             =   75
       Visible         =   0   'False
       Width           =   15255
@@ -3279,7 +3308,7 @@ Begin VB.Form Inicio
          Caption         =   "Imprimir"
          Height          =   360
          Left            =   2640
-         TabIndex        =   162
+         TabIndex        =   153
          Top             =   8400
          Width           =   1935
       End
@@ -3289,7 +3318,7 @@ Begin VB.Form Inicio
          Height          =   435
          Index           =   1
          Left            =   3840
-         TabIndex        =   157
+         TabIndex        =   148
          Top             =   7680
          Width           =   2295
       End
@@ -3299,7 +3328,7 @@ Begin VB.Form Inicio
          Height          =   435
          Index           =   0
          Left            =   2040
-         TabIndex        =   156
+         TabIndex        =   147
          Top             =   7680
          Value           =   -1  'True
          Width           =   2295
@@ -3308,14 +3337,14 @@ Begin VB.Form Inicio
          Caption         =   "Agregar"
          Height          =   375
          Left            =   240
-         TabIndex        =   150
+         TabIndex        =   141
          Top             =   8400
          Width           =   1935
       End
       Begin MSComCtl2.MonthView MonthView1 
          Height          =   4770
          Left            =   240
-         TabIndex        =   69
+         TabIndex        =   62
          Top             =   1320
          Width           =   5745
          _ExtentX        =   10134
@@ -3334,7 +3363,7 @@ Begin VB.Form Inicio
             Strikethrough   =   0   'False
          EndProperty
          ShowToday       =   0   'False
-         StartOfWeek     =   94044162
+         StartOfWeek     =   90636290
          TitleBackColor  =   -2147483646
          TitleForeColor  =   -2147483639
          TrailingForeColor=   -2147483632
@@ -3343,7 +3372,7 @@ Begin VB.Form Inicio
       Begin MSComctlLib.ListView ListViajesRegreso 
          Height          =   4365
          Left            =   6120
-         TabIndex        =   89
+         TabIndex        =   82
          Top             =   5640
          Width           =   9015
          _ExtentX        =   15901
@@ -3386,7 +3415,7 @@ Begin VB.Form Inicio
             Object.Width           =   4233
          EndProperty
          BeginProperty ColumnHeader(4) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
-            Alignment       =   1
+            Alignment       =   2
             SubItemIndex    =   3
             Text            =   "Libres"
             Object.Width           =   4233
@@ -3400,7 +3429,7 @@ Begin VB.Form Inicio
       Begin MSComCtl2.DTPicker DTPicker3 
          Height          =   495
          Left            =   1680
-         TabIndex        =   151
+         TabIndex        =   142
          Top             =   6240
          Width           =   1455
          _ExtentX        =   2566
@@ -3416,14 +3445,14 @@ Begin VB.Form Inicio
             Strikethrough   =   0   'False
          EndProperty
          CustomFormat    =   "HH:mm"
-         Format          =   94044163
+         Format          =   90636291
          UpDown          =   -1  'True
          CurrentDate     =   42273
       End
       Begin MSMask.MaskEdBox MaskEdBox4 
          Height          =   495
          Left            =   1680
-         TabIndex        =   152
+         TabIndex        =   143
          Top             =   6960
          Width           =   2895
          _ExtentX        =   5106
@@ -3444,7 +3473,7 @@ Begin VB.Form Inicio
       Begin MSComctlLib.ListView ListViajesSalida 
          Height          =   4365
          Left            =   6120
-         TabIndex        =   70
+         TabIndex        =   63
          Top             =   800
          Width           =   9015
          _ExtentX        =   15901
@@ -3509,10 +3538,10 @@ Begin VB.Form Inicio
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         ForeColor       =   &H000000C0&
+         ForeColor       =   &H000000FF&
          Height          =   495
          Left            =   240
-         TabIndex        =   281
+         TabIndex        =   271
          Top             =   600
          Width           =   5775
       End
@@ -3521,7 +3550,7 @@ Begin VB.Form Inicio
          Height          =   615
          Index           =   0
          Left            =   120
-         TabIndex        =   155
+         TabIndex        =   146
          Top             =   7680
          Width           =   1935
       End
@@ -3530,7 +3559,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   2
          Left            =   120
-         TabIndex        =   154
+         TabIndex        =   145
          Top             =   6960
          Width           =   1695
       End
@@ -3539,7 +3568,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   1
          Left            =   120
-         TabIndex        =   153
+         TabIndex        =   144
          Top             =   6240
          Width           =   1095
       End
@@ -3550,7 +3579,7 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   4
          Left            =   6240
-         TabIndex        =   91
+         TabIndex        =   84
          Top             =   5160
          Width           =   8775
       End
@@ -3561,19 +3590,38 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   3
          Left            =   6240
-         TabIndex        =   90
+         TabIndex        =   83
          Top             =   320
          Width           =   8775
       End
    End
    Begin VB.Frame VENDER_PASAJE 
       Caption         =   "Vender Pasaje"
-      Height          =   10215
+      Height          =   10455
       Left            =   60
-      TabIndex        =   128
+      TabIndex        =   121
       Top             =   0
       Visible         =   0   'False
       Width           =   15135
+      Begin VB.CommandButton Command9 
+         Caption         =   "Ver Salida"
+         Height          =   435
+         Left            =   11520
+         MaskColor       =   &H00004000&
+         TabIndex        =   329
+         Top             =   360
+         Visible         =   0   'False
+         Width           =   2655
+      End
+      Begin VB.CommandButton Command38 
+         Caption         =   "Ver Regreso"
+         Height          =   435
+         Left            =   11520
+         TabIndex        =   327
+         Top             =   360
+         Visible         =   0   'False
+         Width           =   2655
+      End
       Begin MSComDlg.CommonDialog ColorOcupado 
          Left            =   9480
          Top             =   5040
@@ -3585,16 +3633,16 @@ Begin VB.Form Inicio
          Caption         =   ">>"
          Height          =   435
          Left            =   9360
-         TabIndex        =   194
-         Top             =   7200
+         TabIndex        =   184
+         Top             =   7440
          Width           =   615
       End
       Begin VB.CommandButton Command23 
          Caption         =   "<<"
          Height          =   435
          Left            =   9360
-         TabIndex        =   193
-         Top             =   7800
+         TabIndex        =   183
+         Top             =   8040
          Width           =   615
       End
       Begin VB.CommandButton Command20 
@@ -3610,16 +3658,16 @@ Begin VB.Form Inicio
          EndProperty
          Height          =   480
          Left            =   12960
-         TabIndex        =   149
-         Top             =   2160
+         TabIndex        =   140
+         Top             =   2400
          Width           =   1935
       End
       Begin VB.Frame Frame9 
          Caption         =   "Pasajes"
          Height          =   1575
          Left            =   120
-         TabIndex        =   138
-         Top             =   1440
+         TabIndex        =   129
+         Top             =   1680
          Width           =   14895
          Begin VB.CheckBox enEspera 
             Caption         =   "En Espera"
@@ -3634,7 +3682,7 @@ Begin VB.Form Inicio
             EndProperty
             Height          =   435
             Left            =   10800
-            TabIndex        =   297
+            TabIndex        =   287
             Top             =   720
             Width           =   1935
          End
@@ -3650,7 +3698,7 @@ Begin VB.Form Inicio
             EndProperty
             Height          =   480
             Left            =   9000
-            TabIndex        =   147
+            TabIndex        =   138
             Top             =   840
             Width           =   1455
          End
@@ -3666,7 +3714,7 @@ Begin VB.Form Inicio
             EndProperty
             Height          =   480
             Left            =   7680
-            TabIndex        =   146
+            TabIndex        =   137
             Top             =   840
             Width           =   1215
          End
@@ -3682,7 +3730,7 @@ Begin VB.Form Inicio
             EndProperty
             Height          =   480
             Left            =   5880
-            TabIndex        =   144
+            TabIndex        =   135
             Top             =   840
             Width           =   1695
          End
@@ -3698,7 +3746,7 @@ Begin VB.Form Inicio
             EndProperty
             Height          =   480
             Left            =   120
-            TabIndex        =   139
+            TabIndex        =   130
             Top             =   840
             Width           =   3615
          End
@@ -3714,7 +3762,7 @@ Begin VB.Form Inicio
             EndProperty
             Height          =   480
             Left            =   3840
-            TabIndex        =   142
+            TabIndex        =   133
             Top             =   840
             Width           =   1935
          End
@@ -3723,7 +3771,7 @@ Begin VB.Form Inicio
             Height          =   375
             Index           =   63
             Left            =   9000
-            TabIndex        =   201
+            TabIndex        =   191
             Top             =   360
             Width           =   2055
          End
@@ -3732,7 +3780,7 @@ Begin VB.Form Inicio
             Height          =   375
             Index           =   62
             Left            =   7680
-            TabIndex        =   145
+            TabIndex        =   136
             Top             =   360
             Width           =   1335
          End
@@ -3741,7 +3789,7 @@ Begin VB.Form Inicio
             Height          =   375
             Index           =   61
             Left            =   5880
-            TabIndex        =   143
+            TabIndex        =   134
             Top             =   360
             Width           =   855
          End
@@ -3750,7 +3798,7 @@ Begin VB.Form Inicio
             Height          =   375
             Index           =   60
             Left            =   3840
-            TabIndex        =   141
+            TabIndex        =   132
             Top             =   360
             Width           =   1815
          End
@@ -3759,7 +3807,7 @@ Begin VB.Form Inicio
             Height          =   375
             Index           =   59
             Left            =   120
-            TabIndex        =   140
+            TabIndex        =   131
             Top             =   360
             Width           =   2535
          End
@@ -3767,8 +3815,8 @@ Begin VB.Form Inicio
       Begin MSComctlLib.ListView ListView14 
          Height          =   6495
          Left            =   120
-         TabIndex        =   134
-         Top             =   3600
+         TabIndex        =   126
+         Top             =   3840
          Width           =   9195
          _ExtentX        =   16219
          _ExtentY        =   11456
@@ -3791,7 +3839,7 @@ Begin VB.Form Inicio
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         NumItems        =   7
+         NumItems        =   12
          BeginProperty ColumnHeader(1) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
             Text            =   "N"
             Object.Width           =   1235
@@ -3799,52 +3847,78 @@ Begin VB.Form Inicio
          BeginProperty ColumnHeader(2) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
             Alignment       =   2
             SubItemIndex    =   1
-            Text            =   "ID"
-            Object.Width           =   0
+            Text            =   "F"
+            Object.Width           =   1235
          EndProperty
          BeginProperty ColumnHeader(3) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
             Alignment       =   2
             SubItemIndex    =   2
-            Text            =   "Parada"
-            Object.Width           =   3175
+            Text            =   "ID"
+            Object.Width           =   0
          EndProperty
          BeginProperty ColumnHeader(4) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
             Alignment       =   2
             SubItemIndex    =   3
-            Text            =   "Cliente"
-            Object.Width           =   7937
+            Text            =   "Parada"
+            Object.Width           =   3175
          EndProperty
          BeginProperty ColumnHeader(5) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
             Alignment       =   2
             SubItemIndex    =   4
-            Text            =   "Pre"
-            Object.Width           =   1587
+            Text            =   "Cliente"
+            Object.Width           =   7937
          EndProperty
          BeginProperty ColumnHeader(6) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
             Alignment       =   2
             SubItemIndex    =   5
-            Text            =   "DNI"
-            Object.Width           =   3528
+            Text            =   "Pre"
+            Object.Width           =   1587
          EndProperty
          BeginProperty ColumnHeader(7) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
             Alignment       =   2
             SubItemIndex    =   6
+            Text            =   "DNI"
+            Object.Width           =   3528
+         EndProperty
+         BeginProperty ColumnHeader(8) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            Alignment       =   2
+            SubItemIndex    =   7
             Text            =   "Celular"
             Object.Width           =   4939
+         EndProperty
+         BeginProperty ColumnHeader(9) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            SubItemIndex    =   8
+            Text            =   "vendedor"
+            Object.Width           =   0
+         EndProperty
+         BeginProperty ColumnHeader(10) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            SubItemIndex    =   9
+            Text            =   "fecha_venta"
+            Object.Width           =   0
+         EndProperty
+         BeginProperty ColumnHeader(11) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            SubItemIndex    =   10
+            Text            =   "Reserva Pasaje"
+            Object.Width           =   0
+         EndProperty
+         BeginProperty ColumnHeader(12) {BDD1F052-858B-11D1-B16A-00C0F0283628} 
+            SubItemIndex    =   11
+            Text            =   "Observación"
+            Object.Width           =   0
          EndProperty
       End
       Begin VB.Frame Frame2 
          Caption         =   "Datos Viaje"
          Height          =   855
          Left            =   120
-         TabIndex        =   129
-         Top             =   600
+         TabIndex        =   122
+         Top             =   840
          Width           =   14895
          Begin VB.Label lblCapacidad 
             Caption         =   "100"
             Height          =   375
             Left            =   9360
-            TabIndex        =   136
+            TabIndex        =   328
             Top             =   360
             Width           =   975
          End
@@ -3853,17 +3927,17 @@ Begin VB.Form Inicio
             Caption         =   "Destino: Buenos Aires"
             Height          =   375
             Left            =   10440
-            TabIndex        =   133
+            TabIndex        =   125
             Top             =   360
             Width           =   3975
          End
-         Begin VB.Label lblDia 
+         Begin VB.Label lblDiaAux 
             Caption         =   "Dia: 99/99/9999"
             Height          =   375
-            Left            =   1800
-            TabIndex        =   159
+            Left            =   240
+            TabIndex        =   150
             Top             =   360
-            Width           =   2775
+            Width           =   6615
          End
          Begin VB.Label lblciudad 
             BeginProperty Font 
@@ -3877,49 +3951,42 @@ Begin VB.Form Inicio
             EndProperty
             Height          =   375
             Left            =   13800
-            TabIndex        =   158
+            TabIndex        =   149
             Top             =   360
             Visible         =   0   'False
             Width           =   255
          End
-         Begin VB.Label Label40 
-            Caption         =   "Capacidad:"
+         Begin VB.Label lblHoraAux 
+            Caption         =   "22:30 hs"
             Height          =   375
-            Left            =   7320
-            TabIndex        =   135
+            Left            =   6960
+            TabIndex        =   124
             Top             =   360
-            Width           =   2175
-         End
-         Begin VB.Label lblHora 
-            Alignment       =   2  'Center
-            Caption         =   "Hora: 22:30"
-            Height          =   375
-            Left            =   4680
-            TabIndex        =   132
-            Top             =   360
-            Width           =   2655
+            Width           =   1575
          End
          Begin VB.Label lblId 
             Height          =   375
-            Left            =   600
-            TabIndex        =   131
+            Left            =   120
+            TabIndex        =   123
             Top             =   360
+            Visible         =   0   'False
             Width           =   975
          End
-         Begin VB.Label Label39 
-            Caption         =   "Id:"
+         Begin VB.Label lblInformacion 
+            Caption         =   "Cap:"
             Height          =   375
-            Left            =   120
-            TabIndex        =   130
+            Index           =   77
+            Left            =   8520
+            TabIndex        =   127
             Top             =   360
-            Width           =   495
+            Width           =   855
          End
       End
       Begin MSComctlLib.ListView ListView15 
          Height          =   6495
          Left            =   10005
-         TabIndex        =   137
-         Top             =   3600
+         TabIndex        =   128
+         Top             =   3840
          Width           =   4965
          _ExtentX        =   8758
          _ExtentY        =   11456
@@ -3978,8 +4045,8 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   64
          Left            =   10080
-         TabIndex        =   161
-         Top             =   3120
+         TabIndex        =   152
+         Top             =   3360
          Width           =   4815
       End
       Begin VB.Label lblInformacion 
@@ -3988,8 +4055,8 @@ Begin VB.Form Inicio
          Height          =   375
          Index           =   65
          Left            =   240
-         TabIndex        =   160
-         Top             =   3120
+         TabIndex        =   151
+         Top             =   3360
          Width           =   9015
       End
       Begin VB.Label Label45 
@@ -4005,7 +4072,7 @@ Begin VB.Form Inicio
          EndProperty
          Height          =   375
          Left            =   14640
-         TabIndex        =   148
+         TabIndex        =   139
          Top             =   240
          Width           =   255
       End
@@ -4014,7 +4081,7 @@ Begin VB.Form Inicio
       Caption         =   "Label24"
       Height          =   495
       Left            =   720
-      TabIndex        =   282
+      TabIndex        =   272
       Top             =   120
       Visible         =   0   'False
       Width           =   4455
@@ -4049,9 +4116,6 @@ Begin VB.Form Inicio
    End
    Begin VB.Menu mnu_choferes 
       Caption         =   "Choferes"
-   End
-   Begin VB.Menu mnu_grupos 
-      Caption         =   "Grupos"
    End
    Begin VB.Menu mnu_combis 
       Caption         =   "Combis"
@@ -4121,6 +4185,9 @@ Begin VB.Form Inicio
          Caption         =   "Desconectarse"
       End
    End
+   Begin VB.Menu mnu_datos_conexion 
+      Caption         =   "Datos de Conexion"
+   End
 End
 Attribute VB_Name = "Inicio"
 Attribute VB_GlobalNameSpace = False
@@ -4139,6 +4206,7 @@ Attribute cSubLV.VB_VarHelpID = -1
 Dim MyForm As FRMSIZE
       Dim DesignX As Integer
       Dim DesignY As Integer
+Private formAntes As Integer '0- agenda 1-viajes fijos
 
 Private Sub AnteriorPagina_Click()
 Call cargarClientes(ListView7, Val(numeroPagina.Caption) - 1, Text7.Text)
@@ -4196,10 +4264,16 @@ Call limpiarAgregarCliente
 End Sub
 
 Private Sub Command12_Click()
+On Error GoTo modificarCliente
 If MaskEdBox5.Text = vbNullString Then MsgBox "Llene el campo nombre.": Exit Sub
 Dim iSexo As Byte, iMensual As Byte
 iSexo = IIf(SexoM(0).Value = True, 0, 1)
-Call modificarCliente(lblIdModificar.Caption, MaskEdBox5.Text, MaskEdBox10.Text, iSexo, MaskEdBox6.Text, MaskEdBox7.Text, Combo5.Text, Combo6.Text, Text20.Text, Text21.Text, MaskEdBox8.Text, MaskEdBox9.Text, Text19.Text, MensualM.Value)
+Call modificarCliente(lblIdModificar.Caption, MaskEdBox5.Text, MaskEdBox10.Text, iSexo, MaskEdBox6.Text, MaskEdBox7.Text, Combo5.Text, Combo6.Text, Text20.Text, Text21.Text, MaskEdBox8.Text, MaskEdBox9.Text, Text19.Text, MensualM.Value, vd.Text, vh.Text)
+modificarCliente:
+If Err.Number <> 0 Then
+    MsgBox "Campos invalidos."
+    Resume Next
+End If
 End Sub
 
 Private Sub Command13_Click()
@@ -4222,10 +4296,16 @@ Call cargarClientes(ListView7, Val(numeroPagina.Caption), Text7.Text)
 End Sub
 
 Private Sub Command16_Click()
+On Error GoTo agregarCliente
 If Text8.Text = vbNullString Then MsgBox "Llene el campo nombre.": Exit Sub
 Dim iSexo As Byte
 iSexo = IIf(Sexo(0).Value = True, 0, 1)
-Call agregarCliente(Text8.Text, Text12.Text, iSexo, Text9.Text, Text10.Text, Combo1.Text, Combo2.Text, Text14.Text, Text29.Text, Text13.Text, Text11.Text, Text15.Text, MensualA.Value)
+Call agregarCliente(Text8.Text, Text12.Text, iSexo, Text9.Text, Text10.Text, Combo1.Text, Combo2.Text, Text14.Text, Text29.Text, Text13.Text, Text11.Text, Text15.Text, MensualA.Value, vda.Text, vha.Text)
+agregarCliente:
+If Err.Number <> 0 Then
+    MsgBox "Campos invalidos."
+    Resume Next
+End If
 End Sub
 
 Private Sub Command17_Click()
@@ -4242,8 +4322,17 @@ End Sub
 
 Private Sub Command19_Click()
 MO_CLIENTE.Visible = False
-AGENDA.Visible = True
-Call cargarClientes(ListView7, Val(numeroPagina.Caption), Text7.Text)
+If formAntes = 0 Then
+    AGENDA.Visible = True
+    Call cargarClientes(ListView7, Val(numeroPagina.Caption), Text7.Text)
+ElseIf formAntes = 1 Then
+    AG_VIAJES_FIJOS.Visible = True
+    lblInformacion(57).Visible = False
+    lblInformacion(58).Visible = False
+    ListSalidaPorPersona.Visible = False
+    ListRegresoPorPersona.Visible = False
+    Call cargarClientesVFC(ListView11, 1, "")
+End If
 End Sub
 
 Private Sub Command2_Click()
@@ -4306,7 +4395,7 @@ End Sub
 Private Sub Command24_Click()
 If ListView14.ListItems.Count > 0 Then
     If ListView14.SelectedItem.Index > 0 Then
-        Call ponerEnEspera(ListView14.SelectedItem.SubItems(1))
+        Call ponerEnEspera(ListView14.SelectedItem.SubItems(2))
         Call cargarPasajesViajes(ListView14, ListView15, lblId.Caption, lblCapacidad.Caption)
     End If
 End If
@@ -4329,7 +4418,7 @@ Dim IdRazon As Integer
 If RazonEliminar(1).Value = True Then IdRazon = 1
 If RazonEliminar(2).Value = True Then IdRazon = 2
 If RazonEliminar(3).Value = True Then IdRazon = 3
-Call eliminarPasaje(lblIdEliminar.Caption, lblNombreEliminar.Caption, lblId.Caption, IdRazon, Text23.Text)
+Call eliminarPasaje(lblIdEliminar.Caption, lblNombreEliminar.Caption, lblId.Caption, IdRazon, Text23.Text, EL_PASAJE, VENDER_PASAJE)
 Call cargarPasajesViajes(ListView14, ListView15, lblId.Caption, lblCapacidad.Caption)
 End Sub
 
@@ -4402,7 +4491,7 @@ End Sub
 Private Sub Command31_Click()
 If ListView15.ListItems.Count > 0 Then
     If ListView15.SelectedItem.Index > 0 Then
-        If ponerEnOcupado(ListView15.SelectedItem.SubItems(1), Combo8.Text) Then
+        If ponerEnOcupado(ListView15.SelectedItem.SubItems(1), Combo8.Text, lblciudad.Caption) Then
             Call cargarPasajesViajes(ListView14, ListView15, lblId.Caption, lblCapacidad.Caption)
             PASAR_OCUPADO.Visible = False
             VENDER_PASAJE.Enabled = True
@@ -4451,14 +4540,14 @@ Private Sub Command34_Click()
 Dim idParada As Integer
 idParada = obtenerIdParada(Combo10.Text, lblciudad.Caption)
 If idParada = 0 Then MsgBox "Parada incorrecta.": Exit Sub
-Call editarPasaje(ListView14.SelectedItem.ListSubItems(1), idParada, Text27.Text)
+Call editarPasaje(ListView14.SelectedItem.ListSubItems(2), idParada, Text27.Text, Check1.Value, Check2.Value, Text35.Text)
 Call cargarPasajesViajes(ListView14, ListView15, lblId.Caption, lblCapacidad.Caption)
 ED_PASAJE.Visible = False
 VENDER_PASAJE.Enabled = True
 End Sub
 
 Private Sub Command35_Click()
-Call iniciarSesion(Text28.Text, Text30.Text)
+If Conectado Then Call iniciarSesion(Text28.Text, Text30.Text)
 End Sub
 
 Private Sub Command36_Click()
@@ -4467,6 +4556,15 @@ End Sub
 
 Private Sub Command37_Click()
 Call agregarUsuario(Text33.Text, Text34.Text)
+End Sub
+
+Private Sub Command38_Click()
+FormularioRegreso.Show
+Call OcultarFramesRegreso(FormularioRegreso.VENTA_PASAJES)
+FormularioRegreso.ListViajesRegreso.ListItems.Clear
+FormularioRegreso.MonthView1.Value = Date
+Call FormularioRegreso.SeleccionarDiaRegreso(Date)
+FormularioRegreso.VENTA_PASAJES.Enabled = True
 End Sub
 
 Private Sub Command4_Click()
@@ -4540,9 +4638,12 @@ Text5.Text = vbNullString
 End Sub
 
 Private Sub Command9_Click()
-Call agregarGrupo(Text6.Text)
-Call cargarGrupos(ListView5)
-Text6.Text = vbNullString
+FormularioRegreso.Show
+Call OcultarFramesRegreso(FormularioRegreso.VENTA_PASAJES)
+FormularioRegreso.ListViajesSalida.ListItems.Clear
+FormularioRegreso.MonthView1.Value = Date
+Call FormularioRegreso.SeleccionarDiaSalida(Date)
+FormularioRegreso.VENTA_PASAJES.Enabled = True
 End Sub
 
 Private Sub DiaSemana_Click(Index As Integer)
@@ -4590,10 +4691,6 @@ End Sub
 
 Private Sub Label12_Click()
 PARADA_BSAS.Visible = False
-End Sub
-
-Private Sub Label14_Click()
-GRUPO.Visible = False
 End Sub
 
 Private Sub Label17_Click()
@@ -4659,17 +4756,19 @@ If ListViajesRegreso.ListItems.Count > 0 Then
 If ListViajesRegreso.SelectedItem.Index > 0 Then
     Call OcultarFrames(VENDER_PASAJE)
     lblId.Caption = ListViajesRegreso.SelectedItem.Tag
-    lblHora.Caption = "Hora: " + ListViajesRegreso.SelectedItem.Text
+    lblHoraAux.Caption = ListViajesRegreso.SelectedItem.Text & " hs"
     lblCapacidad.Caption = ListViajesRegreso.SelectedItem.ListSubItems(2).Text
     lblDestino.Caption = "Destino: Mercedes"
     Call pintarEncabezadoPasaje(32768)
     lblciudad.Caption = 1
-    lblDia.Caption = "Dia: " & MonthView1.Value
+    lblDiaAux.Caption = UCase(FormatDateTime(MonthView1.Value, vbLongDate))
     Call cargarPasajesViajes(ListView14, ListView15, ListViajesRegreso.SelectedItem.Tag, ListViajesRegreso.SelectedItem.ListSubItems(2).Text)
     Call cargarParadasComboBsAs(Combo4)
     Call cargarClientesCombo(Combo3)
     Text17.Text = vbNullString
     Text18.Text = vbNullString
+    Command38.Visible = False
+    Command9.Visible = True
 End If
 End If
 End Sub
@@ -4687,14 +4786,24 @@ Private Sub ListView10_BeforeLabelEdit(Cancel As Integer)
 Cancel = True
 End Sub
 
+Private Sub ListView11_DblClick()
+Call OcultarFrames(MO_CLIENTE)
+formAntes = 1
+Call cargarClienteModificar(ListView11.SelectedItem.Text)
+End Sub
+
 Private Sub ListView14_DblClick()
 ED_PASAJE.Visible = True
 Dim i As Integer
 For i = 0 To Combo4.ListCount - 1
     Combo10.AddItem Combo4.List(i)
 Next i
-Combo10.Text = ListView14.SelectedItem.SubItems(2)
-Text27.Text = ListView14.SelectedItem.SubItems(4)
+Combo10.Text = ListView14.SelectedItem.SubItems(3)
+Text27.Text = ListView14.SelectedItem.SubItems(5)
+lblInfoVenta.Caption = "El pasaje fue vendido por " & ListView14.SelectedItem.SubItems(8) & " a las " & ListView14.SelectedItem.SubItems(9)
+Check1.Value = IIf(ListView14.SelectedItem.SubItems(10) = "SI", 1, 0)
+Check2.Value = IIf(ListView14.SelectedItem.SubItems(1) = "S", 1, 0)
+Text35.Text = ListView14.SelectedItem.SubItems(11)
 VENDER_PASAJE.Enabled = False
 End Sub
 
@@ -4745,6 +4854,7 @@ End Sub
 
 Private Sub ListView7_DblClick()
 Call OcultarFrames(MO_CLIENTE)
+formAntes = 0
 Call cargarClienteModificar(ListView7.SelectedItem.Text)
 End Sub
 
@@ -4772,13 +4882,13 @@ End Sub
 
 Private Sub ListView7_MouseDown(Button As Integer, _
                                 Shift As Integer, _
-                                x As Single, y As Single)
+                                X As Single, Y As Single)
       
     'variable para el item seleccionado
     Dim Item As ListItem
     ' verifica que se presionó el botón derecho
     If Button = vbRightButton Then
-        Set Item = ListView7.HitTest(x, y)
+        Set Item = ListView7.HitTest(X, Y)
         If Not Item Is Nothing Then
             Set ListView7.SelectedItem = Item
             PopupMenu mnu_agenda_list
@@ -4788,13 +4898,13 @@ End Sub
 
 Private Sub ListViajesSalida_MouseDown(Button As Integer, _
                                 Shift As Integer, _
-                                x As Single, y As Single)
+                                X As Single, Y As Single)
       
     'variable para el item seleccionado
     Dim Item As ListItem
     ' verifica que se presionó el botón derecho
     If Button = vbRightButton Then
-        Set Item = ListViajesSalida.HitTest(x, y)
+        Set Item = ListViajesSalida.HitTest(X, Y)
         If Not Item Is Nothing Then
             Set ListViajesSalida.SelectedItem = Item
             PopupMenu mnu_cambiar_combi_mercedes
@@ -4804,13 +4914,13 @@ End Sub
 
 Private Sub ListViajesRegreso_MouseDown(Button As Integer, _
                                 Shift As Integer, _
-                                x As Single, y As Single)
+                                X As Single, Y As Single)
       
     'variable para el item seleccionado
     Dim Item As ListItem
     ' verifica que se presionó el botón derecho
     If Button = vbRightButton Then
-        Set Item = ListViajesRegreso.HitTest(x, y)
+        Set Item = ListViajesRegreso.HitTest(X, Y)
         If Not Item Is Nothing Then
             Set ListViajesRegreso.SelectedItem = Item
             PopupMenu mnu_cambiar_combi_bsas
@@ -4820,13 +4930,13 @@ End Sub
 
 Private Sub ListView14_MouseDown(Button As Integer, _
                                 Shift As Integer, _
-                                x As Single, y As Single)
+                                X As Single, Y As Single)
       
     'variable para el item seleccionado
     Dim Item As ListItem
     ' verifica que se presionó el botón derecho
     If Button = vbRightButton Then
-        Set Item = ListView14.HitTest(x, y)
+        Set Item = ListView14.HitTest(X, Y)
         If Not Item Is Nothing Then
             Set ListView14.SelectedItem = Item
             PopupMenu mnu_pasajes_ocupados
@@ -4836,13 +4946,13 @@ End Sub
 
 Private Sub ListView15_MouseDown(Button As Integer, _
                                 Shift As Integer, _
-                                x As Single, y As Single)
+                                X As Single, Y As Single)
       
     'variable para el item seleccionado
     Dim Item As ListItem
     ' verifica que se presionó el botón derecho
     If Button = vbRightButton Then
-        Set Item = ListView15.HitTest(x, y)
+        Set Item = ListView15.HitTest(X, Y)
         If Not Item Is Nothing Then
             Set ListView15.SelectedItem = Item
             PopupMenu mnu_pasajes_espera
@@ -4855,17 +4965,19 @@ If ListViajesSalida.ListItems.Count > 0 Then
 If ListViajesSalida.SelectedItem.Index > 0 Then
     Call OcultarFrames(VENDER_PASAJE)
     lblId.Caption = ListViajesSalida.SelectedItem.Tag
-    lblHora.Caption = "Hora: " + ListViajesSalida.SelectedItem.Text
+    lblHoraAux.Caption = ListViajesSalida.SelectedItem.Text & " hs"
     lblCapacidad.Caption = ListViajesSalida.SelectedItem.ListSubItems(2).Text
     lblDestino.Caption = "Destino: Buenos Aires"
     Call pintarEncabezadoPasaje(16711680)
     lblciudad.Caption = 0
-    lblDia.Caption = "Dia: " & MonthView1.Value
+    lblDiaAux.Caption = UCase(FormatDateTime(MonthView1.Value, vbLongDate))
     Call cargarPasajesViajes(ListView14, ListView15, ListViajesSalida.SelectedItem.Tag, ListViajesSalida.SelectedItem.ListSubItems(2).Text)
     Call cargarParadasComboMercedes(Combo4)
     Call cargarClientesCombo(Combo3)
     Text17.Text = vbNullString
     Text18.Text = vbNullString
+    Command38.Visible = True
+    Command9.Visible = False
 End If
 End If
 End Sub
@@ -4950,15 +5062,6 @@ If KeyCode = vbKeyDelete And ListView4.ListItems.Count > 0 Then
 End If
 End Sub
 
-Private Sub ListView5_KeyUp(KeyCode As Integer, Shift As Integer)
-If KeyCode = vbKeyDelete And ListView5.ListItems.Count > 0 Then
-    If MsgBox("¿Esta seguro que desea eliminar un grupo?", vbYesNo, "Estrella Tour") = vbYes Then
-        Call eliminarGrupo(ListView5.ListItems(ListView5.SelectedItem.Index).Text)
-        Call cargarGrupos(ListView5)
-    End If
-End If
-End Sub
-
 Private Sub ListView6_KeyUp(KeyCode As Integer, Shift As Integer)
 If KeyCode = vbKeyDelete And ListView6.ListItems.Count > 0 Then
     If MsgBox("¿Esta seguro que desea eliminar un viaje fijo?", vbYesNo, "Estrella Tour") = vbYes Then
@@ -4994,9 +5097,9 @@ Private Sub ListView14_KeyUp(KeyCode As Integer, Shift As Integer)
 If KeyCode = vbKeyDelete And ListView14.ListItems.Count > 0 Then
     VENDER_PASAJE.Enabled = False
     EL_PASAJE.Visible = True
-    lblIdEliminar.Caption = ListView14.SelectedItem.SubItems(1)
-    lblDescripEliminar.Caption = "Borrar a " & ListView14.SelectedItem.SubItems(3) & " del viaje del " & lblDia.Caption & " " & lblHora.Caption
-    lblNombreEliminar.Caption = ListView14.SelectedItem.SubItems(3)
+    lblIdEliminar.Caption = ListView14.SelectedItem.SubItems(2)
+    lblDescripEliminar.Caption = "Borrar a " & ListView14.SelectedItem.SubItems(4) & " del viaje del " & lblDiaAux.Caption & " a las " & lblHoraAux.Caption
+    lblNombreEliminar.Caption = ListView14.SelectedItem.SubItems(4)
     RazonEliminar(1).Value = True
     Text23.Text = vbNullString
 End If
@@ -5007,7 +5110,7 @@ If KeyCode = vbKeyDelete And ListView15.ListItems.Count > 0 Then
     VENDER_PASAJE.Enabled = False
     EL_PASAJE.Visible = True
     lblIdEliminar.Caption = ListView15.SelectedItem.SubItems(1)
-    lblDescripEliminar.Caption = "Borrar a " & ListView15.SelectedItem.SubItems(2) & " del viaje del " & lblDia.Caption & " " & lblHora.Caption
+    lblDescripEliminar.Caption = "Borrar a " & ListView15.SelectedItem.SubItems(2) & " del viaje del " & lblDiaAux.Caption & " a las " & lblHoraAux.Caption
     lblNombreEliminar.Caption = ListView15.SelectedItem.SubItems(2)
     RazonEliminar(1).Value = True
     Text23.Text = vbNullString
@@ -5064,6 +5167,17 @@ Call OcultarFrames(COMBI)
 Call cargarCombis(ListView2)
 End Sub
 
+Private Sub mnu_datos_conexion_Click()
+DatosConexion.Show
+Dim rutaArchivo As String
+rutaArchivo = App.Path & "\DatosConexion.txt"
+
+DatosConexion.TxtIP = LeerDato(rutaArchivo, "informacion", "ip")
+DatosConexion.TxtPuerto = LeerDato(rutaArchivo, "informacion", "puerto")
+DatosConexion.TxtUsuario = LeerDato(rutaArchivo, "informacion", "usuario")
+DatosConexion.TxtContra = LeerDato(rutaArchivo, "informacion", "password")
+End Sub
+
 Private Sub mnu_desconectarse_Click()
 If Not Logueado Then Exit Sub
 Call OcultarFrames(LOGUEO)
@@ -5082,12 +5196,6 @@ If Not Logueado Then Exit Sub
 Call OcultarFrames(AG_FERIADO)
 Call cargarFeriados(ListView17)
 MonthView2.Value = Date
-End Sub
-
-Private Sub mnu_grupos_Click()
-If Not Logueado Then Exit Sub
-Call OcultarFrames(GRUPO)
-Call cargarGrupos(ListView5)
 End Sub
 
 Private Sub mnu_imprimir_clientes_fijos_Click()
@@ -5150,7 +5258,7 @@ End Sub
 
 Private Sub mnu_pintar_pasaje_ocupado_Click()
 ColorOcupado.ShowColor
-Call pintarPasaje(ListView14.SelectedItem.SubItems(1), ColorOcupado.Color)
+Call pintarPasaje(ListView14.SelectedItem.SubItems(2), ColorOcupado.Color)
 Call cargarPasajesViajes(ListView14, ListView15, lblId.Caption, lblCapacidad.Caption)
 End Sub
 
@@ -5197,25 +5305,6 @@ Private Sub nme_Fijos_BsAS_Click()
 If Not Logueado Then Exit Sub
 Call OcultarFrames(VIAJES_FIJOS_BSAS)
 DiaSemanaBsAs(0).Value = True
-End Sub
-
-Public Sub AutoCompletar(ComboX As ComboBox, KeyCode As Integer, Shift As Integer)
-Dim LenText As Long, ret As Long
-     
-   'Si los caracteres presionados están entre el 0 y la Z
-   If KeyCode >= vbKey0 And KeyCode <= vbKeyNumpad9 Then
-     
-   ret = SendMessage(ComboX.hwnd, &H14C&, -1, ByVal ComboX.Text)
-     
-         If ret >= 0 Then
-            LenText = Len(ComboX.Text)
-            ComboX.ListIndex = ret
-            ComboX.Text = ComboX.List(ret)
-            ComboX.SelStart = LenText
-            ComboX.SelLength = Len(ComboX.Text) - LenText
-              
-         End If
-   End If
 End Sub
 
 Private Sub Combo1_KeyUp(KeyCode As Integer, Shift As Integer)
@@ -5378,5 +5467,6 @@ End Sub
 Private Sub Form_Unload(Cancel As Integer)
     Call desconectarBaseDatos
     'Set cSubLV = Nothing
+    Unload DatosConexion
 End Sub
 

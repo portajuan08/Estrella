@@ -5,7 +5,7 @@ Public nombreClientes() As Variant
 Sub agregarCliente(Nombre As String, dni As String, Sexo As Byte, _
                    Mail As String, Direccion As String, paradamercedes As String, _
                    paradabsas As String, PrecioMercedes As String, PrecioBsAs As String, _
-                   celular As String, Casa As String, observaciones As String, mensual As Byte)
+                   celular As String, Casa As String, observaciones As String, mensual As Byte, vacacionesDesde As String, vacacionesHasta As String)
 
 Dim idParadaBsAs, idParadaMercedes As Integer
 
@@ -36,6 +36,8 @@ cmdCommand.Parameters.Append cmdCommand.CreateParameter("celular", adVarChar, ad
 cmdCommand.Parameters.Append cmdCommand.CreateParameter("casa", adVarChar, adParamInput, 18, Casa)
 cmdCommand.Parameters.Append cmdCommand.CreateParameter("observaciones", adVarChar, adParamInput, 250, observaciones)
 cmdCommand.Parameters.Append cmdCommand.CreateParameter("mensual", adInteger, adParamInput, , mensual)
+cmdCommand.Parameters.Append cmdCommand.CreateParameter("vacacionesDesde", adVarChar, adParamInput, 50, vacacionesDesde)
+cmdCommand.Parameters.Append cmdCommand.CreateParameter("vacacionesHasta", adVarChar, adParamInput, 50, vacacionesHasta)
 cmdCommand.Parameters.Append cmdCommand.CreateParameter("resultado", adInteger, adParamOutput)
 cmdCommand.Execute
 resultado = cmdCommand("resultado")
@@ -55,7 +57,7 @@ End Sub
 Sub modificarCliente(Id As String, Nombre As String, dni As String, Sexo As Byte, _
                    Mail As String, Direccion As String, paradamercedes As String, _
                    paradabsas As String, PrecioMercedes As String, PrecioBsAs As String, _
-                   celular As String, Casa As String, observaciones As String, mensual As Byte)
+                   celular As String, Casa As String, observaciones As String, mensual As Byte, vacacionesDesde As String, vacacionesHasta As String)
 
 Dim idParadaBsAs, idParadaMercedes As Integer
 
@@ -87,6 +89,8 @@ cmdCommand.Parameters.Append cmdCommand.CreateParameter("celular", adVarChar, ad
 cmdCommand.Parameters.Append cmdCommand.CreateParameter("casa", adVarChar, adParamInput, 18, Casa)
 cmdCommand.Parameters.Append cmdCommand.CreateParameter("observaciones", adVarChar, adParamInput, 250, observaciones)
 cmdCommand.Parameters.Append cmdCommand.CreateParameter("mensual", adInteger, adParamInput, , mensual)
+cmdCommand.Parameters.Append cmdCommand.CreateParameter("vacacionesDesde", adVarChar, adParamInput, 50, vacacionesDesde)
+cmdCommand.Parameters.Append cmdCommand.CreateParameter("vacacionesHasta", adVarChar, adParamInput, 50, vacacionesHasta)
 cmdCommand.Parameters.Append cmdCommand.CreateParameter("resultado", adInteger, adParamOutput)
 cmdCommand.Execute
 resultado = cmdCommand("resultado")
@@ -234,6 +238,36 @@ aRecSet.Close
     
 End Sub
 
+Sub cargarDatosVentaPasajeroFormularioRegreso(NombreCliente As String, IdViaje As String)
+Dim i As Integer
+Dim Registros() As Variant
+Dim cmdCommand As New ADODB.Command
+
+cmdCommand.ActiveConnection = ConexionBD
+cmdCommand.CommandType = adCmdStoredProc
+cmdCommand.CommandText = "cargarDatosVentaPasajero"
+cmdCommand.Parameters.Append cmdCommand.CreateParameter("nombre", adVarChar, adParamInput, 80, NombreCliente)
+cmdCommand.Parameters.Append cmdCommand.CreateParameter("viaje", adBigInt, adParamInput, , IdViaje)
+
+Set aRecSet = cmdCommand.Execute
+If Not aRecSet.EOF Then
+    Registros = aRecSet.GetRows()
+
+    FormularioRegreso.Combo4.Text = IIf(IsNull(Registros(3, i)), vbNullString, Registros(3, i))
+    FormularioRegreso.Text17 = IIf(IsNull(Registros(1, i)), vbNullString, Registros(1, i))
+    FormularioRegreso.Text18 = IIf(IsNull(Registros(2, i)), vbNullString, Registros(2, i))
+    FormularioRegreso.Text22 = IIf(IsNull(Registros(0, i)), vbNullString, Registros(0, i))
+Else
+    FormularioRegreso.Combo4.Text = vbNullString
+    FormularioRegreso.Text17.Text = vbNullString
+    FormularioRegreso.Text18.Text = vbNullString
+    FormularioRegreso.Text22.Text = vbNullString
+End If
+
+aRecSet.Close
+    
+End Sub
+
 Public Function obtener_id_cliente(nombre_cliente As String, descripcion_parada As String _
                                   , precio As Double, dni As String, celular As String, Ciudad As Integer) As Integer
 
@@ -305,6 +339,8 @@ If Not aRecSet.EOF Then
         .SexoM(iSexo).Value = True
         bMensual = IIf(IsNull(Registros(13, i)), False, Registros(13, i))
         .MensualM.Value = IIf(bMensual, 1, 0)
+        .vd.Text = IIf(IsNull(Registros(14, i)), vbNullString, Registros(14, i))
+        .vh.Text = IIf(IsNull(Registros(15, i)), vbNullString, Registros(15, i))
         
     End With
 End If

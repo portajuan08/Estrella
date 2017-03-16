@@ -28,24 +28,26 @@ Title1=EstrellaTour
 StartIn1=$(AppPath)
 
 [Setup]
-Title=EstrellaTour
+Title=EstrellaTour Prueba Juan
 DefaultDir=$(ProgramFiles)\EstrellaTour
 AppExe=EstrellaTour Nuevo.exe
 AppToUninstall=EstrellaTour Nuevo.exe
 
 [Setup1 Files]
-File1=@MSMSKES.DLL,$(WinSysPath),,$(Shared),7/28/98 3:00:00 AM,20480,6.0.81.63
-File2=@MSMASK32.OCX,$(WinSysPath),$(DLLSelfRegister),$(Shared),3/9/04 3:00:00 AM,167968,6.0.84.18
-File3=@MSCC2ES.DLL,$(WinSysPath),,$(Shared),7/28/98 3:00:00 AM,60928,6.0.81.63
-File4=@MSCOMCT2.OCX,$(WinSysPath),$(DLLSelfRegister),$(Shared),3/9/04 3:00:00 AM,662288,6.1.97.82
-File5=@MSCMCES.DLL,$(WinSysPath),,$(Shared),7/28/98 3:00:00 AM,140800,6.0.81.63
-File6=@MSCOMCTL.OCX,$(WinSysPath),$(DLLSelfRegister),$(Shared),3/9/04 3:00:00 AM,1081616,6.1.97.82
-File7=@msado27.tlb,$(WinSysPath),,$(Shared),6/6/12 12:51:46 AM,77824,6.1.7601.17857
-File8=@DBRPRES.DLL,$(WinSysPath),,$(Shared),7/28/98 3:00:00 AM,33280,6.0.81.63
-File9=@STDFTES.DLL,$(WinSysPath),,$(Shared),7/31/98 3:00:00 AM,6656,6.0.81.63
-File10=@MSSTDFMT.DLL,$(WinSysPath),$(DLLSelfRegister),$(Shared),2/23/04 3:00:00 AM,119808,6.1.97.82
-File11=@MSDBRPTR.DLL,$(WinSysPath),$(DLLSelfRegister),$(Shared),2/23/04 3:00:00 AM,322560,6.1.97.82
-File12=@EstrellaTour Nuevo.exe,$(AppPath),,$(Shared),11/10/15 9:04:58 PM,397312,1.0.0.0
+File1=@CMDLGES.DLL,$(WinSysPath),,$(Shared),7/28/98 3:00:00 AM,33280,6.0.81.63
+File2=@COMDLG32.OCX,$(WinSysPath),$(DLLSelfRegister),$(Shared),3/9/04 3:00:00 AM,152848,6.1.97.82
+File3=@MSMSKES.DLL,$(WinSysPath),,$(Shared),7/28/98 3:00:00 AM,20480,6.0.81.63
+File4=@MSMASK32.OCX,$(WinSysPath),$(DLLSelfRegister),$(Shared),3/9/04 3:00:00 AM,167968,6.0.84.18
+File5=@MSCC2ES.DLL,$(WinSysPath),,$(Shared),7/28/98 3:00:00 AM,60928,6.0.81.63
+File6=@MSCOMCT2.OCX,$(WinSysPath),$(DLLSelfRegister),$(Shared),3/9/04 3:00:00 AM,662288,6.1.97.82
+File7=@MSCMCES.DLL,$(WinSysPath),,$(Shared),7/28/98 3:00:00 AM,140800,6.0.81.63
+File8=@MSCOMCTL.OCX,$(WinSysPath),$(DLLSelfRegister),$(Shared),3/9/04 3:00:00 AM,1081616,6.1.97.82
+File9=@msado27.tlb,$(WinSysPath),,$(Shared),6/6/12 12:51:46 AM,77824,6.1.7601.17857
+File10=@DBRPRES.DLL,$(WinSysPath),,$(Shared),7/28/98 3:00:00 AM,33280,6.0.81.63
+File11=@STDFTES.DLL,$(WinSysPath),,$(Shared),7/31/98 3:00:00 AM,6656,6.0.81.63
+File12=@MSSTDFMT.DLL,$(WinSysPath),$(DLLSelfRegister),$(Shared),2/23/04 3:00:00 AM,119808,6.1.97.82
+File13=@MSDBRPTR.DLL,$(WinSysPath),$(DLLSelfRegister),$(Shared),2/23/04 3:00:00 AM,322560,6.1.97.82
+File14=@EstrellaTour Nuevo.exe,$(AppPath),,$(Shared),11/1/16 7:28:41 PM,458752,1.0.0.0
 
 ; Puede eliminar las siguientes líneas para obtener espacio adicional 
 ; con el fin de personalizar este archivo en un disco de instalación completa.
